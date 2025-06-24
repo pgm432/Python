@@ -1,0 +1,205 @@
+python supports the following data types.
+                         1. int
+                         2. float
+                         3. str
+                         4. complex
+                         5. bool
+                         6. list
+                         7. tuple
+                         8. set
+                         9. dict
+                         10. frozenset
+                         11. bytes
+                         12. bytearray
+                         13. None
+                         14. range
+1. int:
+-------------
+==> The int represents integer data type.
+==> It allows only numbers.
+
+ex-1:  
+a = 35
+print(a)
+print(type(a))
+
+
+ex-2:  
+b = 66
+print(b)
+print(type(b))
+
+ 
+
+ex-3:  
+a = 35 
+b = 66
+c=a+b
+print(c)
+print(type(c))
+ 
+
+2. float:
+-------------
+==> The float represents float data type.
+==> It allows   numbers with decimal point
+
+ex-1:   
+a = 35.6
+print(a)
+print(type(a))
+
+
+ex-2:   
+b = 1.2
+print(b)
+print(type(b))
+
+
+
+ex-3:   
+
+a = 35.3
+b = 1.2
+c = a+b
+print(c)
+print(type(c))
+
+[8:54 AM, 6/24/2025] Kusu Srinivasa Rao Python: IDLE  ===> Integrated Development Learning Environment
+
+  IDE   ===> Integrated Development Environment.
+               Top 10 IDE's Tools are:
+                       pycharm
+                         |
+                         |--> pycharm community edition
+                         |--> pycharm professional edition
+                         
+                       anaconda
+                         |
+                         |--> jupyter lab
+                         |--> jupyter note book
+                         |--> spyder(Scientific PYthon DElopment enviRonment)
+                         
+                       vscode
+                       thonny
+                       webstrom
+                       sublime text
+                       atom
+                       vim
+                       notepad
+                       notepad++
+[8:54 AM, 6/24/2025] Kusu Srinivasa Rao Python: pycharm community edition:
+        python code
+        html code
+        css code
+        javascript
+
+    
+pycharm professional edition:
+        python code
+        html code
+        css code
+        javascript
+        django code
+        flask code
+        react js
+        react native
+        sql
+[8:54 AM, 6/24/2025] Kusu Srinivasa Rao Python: python supports the following data types.
+                         1. int
+                         2. float
+                         3. str
+                         4. complex
+                         5. bool
+                         6. list
+                         7. tuple
+                         8. set
+                         9. dict
+                         10. frozenset
+                         11. bytes
+                         12. bytearray
+                         13. None
+                         14. range
+[8:55 AM, 6/24/2025] Kusu Srinivasa Rao Python: 1. int:
+-------------
+==> The int represents integer data type.
+==> It allows only numbers.
+
+ex-1:  
+a = 35
+print(a)
+print(type(a))
+
+
+ex-2:  
+b = 66
+print(b)
+print(type(b))
+
+ 
+
+ex-3:  
+a = 35 
+b = 66
+c=a+b
+print(c)
+print(type(c))
+ 
+
+2. float:
+-------------
+==> The float represents float data type.
+==> It allows   numbers with decimal point
+
+ex-1:   
+a = 35.6
+print(a)
+print(type(a))
+
+
+ex-2:   
+b = 1.2
+print(b)
+print(type(b))
+
+
+
+ex-3:   
+
+a = 35.3
+b = 1.2
+c = a+b
+print(c)
+print(type(c))
+
+
+
+str:
+-----
+==> The str represents string data type.
+== it allows alphabets, numbers and symbols.
+==> A single character or group of characters is called a string
+==> In python , the strings are enclosed by either
+         single quotes (or) double quotes (or)
+         triple single quotes (or) triple double quotes.
+
+        ex-1:
+                    'Tronix Technologies'
+                    "Tronix Technologies"
+                    '''Tronix Technologies'''
+                    """Tronix Technologies"""
+
+
+        ex-2:
+
+                 'python is a high level programming Language'
+                 "python is a high level programming Language"
+                 '''python is a high level programming Language'''
+                 """python is a high level programming Language"""
+
+
+        ex-3:
+                 Hyderabad'
+                 "Hyderabad'
+                 'Hyderabad"
+                 '''Hyderabad"""
