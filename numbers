@@ -1,0 +1,116 @@
+Types of Number systems
+                    (or)
+                  Types of numbers
+                ---------------------
+===> python supports 4 types of nubmer systems . These are:
+                   1. decimal numbers
+                   2. binary numbers
+                   3. octal numbers
+                   4. Hexa-decimal numbers
+                   
+                  
+1. decimal numbers:
+    It allows digits. i.e.  0,1,2,3,....9.
+    The Total No. of digits are 10. so its base value is 10.
+    By default, every number is decimal number
+    
+2. binary numbers:
+    It allows only 2 digits. i.e.  0,1.
+    The Total No. of digits are 2. so its base value is 2.
+    binary numbers statrs with 0b (or) 0B.
+    
+3. octal numbers:
+    It allows digits. i.e.  0,1,2,3,....7.
+    The Total No. of digits are 8. so its base value is 8.
+    octal numbers statrs with 0o (or) 0O.
+    
+4. Hexa-decimal numbers:
+    It allows digits. i.e.  0,1,2,3,....9
+    The lower case alphabets are :a,b,c,d,e,f.
+    The upper case alpahbets are :A,B,C,D,E,F.
+    The Total No. of digits are 16. so its base value is 16.
+    Hexa-decimal numbers statrs with 0x (or) 0X.
+    The value of 'a' or 'A' is :10
+    The value of 'b' or 'B' is :11
+    The value of 'c' or 'C' is :12
+    The value of 'd' or 'D' is :13
+    The value of 'e' or 'E' is :14
+    The value of 'f' or 'F' is :15 
+    
+                    
+ex-1: To convert
+
+decimal  ---> binary        decimal  --> octal     decimal --> hexa-decimal 
+  25 ==> 0b11001            25  --> 0o31              25 ===> 0x19
+
+
+
+bin(25)
+'0b11001'
+oct(25)
+'0o31'
+hex(25)
+'0x19'
+
+
+
+
+
+
+ex-2: To convert
+
+decimal  ---> binary        decimal  --> octal     decimal --> hexa-decimal 
+    66 ===> 0b100010          66===> 0o102            66==>0x42
+
+
+bin(66)
+'0b1000010'
+oct(66)
+'0o102'
+hex(66)
+'0x42'
+
+
+
+
+
+
+
+
+
+
+
+ex-3: To convert
+
+            decimal --> hexa-decimal 
+                 76  
+
+hex(76)
+'0x4c'
+
+
+ex-4: To convert
+
+            decimal --> hexa-decimal 
+              42     
+
+
+    The value of 'a' or 'A' is :10
+    The value of 'b' or 'B' is :11
+    The value of 'c' or 'C' is :12
+    The value of 'd' or 'D' is :13
+    The value of 'e' or 'E' is :14
+    The value of 'f' or 'F' is :15 
+
+
+
+bin():
+    This function is used to convert decimal number into binary number
+
+
+oct():
+    This function is used to convert decimal number into octal number
+
+
+hex():
+    This function is used to convert decimal number into Hexa-decimal number
