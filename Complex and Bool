@@ -1,0 +1,106 @@
+complex :
+====> The compelx represents complex data type.
+====> The compelx number format is:
+
+
+                 a + bj
+
+        Here,
+          a is called real part
+          b is called imaginary part
+          
+ex-1:  
+x = 9+5j
+print(x)
+print(type(x))
+
+
+ex-2:   
+y = 7+9j
+print(y)
+print(type(y))
+
+ 
+ex-3:   
+x = 9+5j 
+y = 7+9j
+z = x+y
+print(z)
+print(type(z))
+
+
+ex-4:  To display real and imaginary parts  
+x = 9+5j
+print(x.real)
+print(x.imag)
+
+5. bool:  
+--------
+==> The bool reprsents boolean data type.
+==> it allows only 2 values.
+    i.e. True , False
+
+===> True value for 1.
+===> False value for 0.
+ex-1:  
+ 
+x = True
+print(x)
+print(type(x))
+
+
+ex-2:  
+ 
+y = False
+print(y)
+print(type(y))
+
+ex-3:   
+ 
+x = True
+y = False
+z = x+y
+print(z)
+print(type(z))
+
+ex-4:  
+k = True+True+True-True+False+False-False+True+True+True+True+True-True-True+True
+print(k)
+print(type(k))
+
+x = 4568e2
+y = 436e10
+z = x-y
+print(z)
+print(type(z))
+
+'''
+case-1: 
+    x = 9
+
+
+        Here,
+           x is called variable
+           = is called assignment operator
+           9 is called value
+
+           i.e. 9 value stored into x variable.
+case-2:
+       x = 9,56,78,12,34
+
+case-3 :
+       x,y,z = 'hyderabad','thripathi','chennai'
+
+case-4:
+      x = y = z = 'hyderabad'
+
+   int     ===> It allows numbers
+   float   ===> It allows numbers with decimal point (or) e notation
+   str     ===> It allows alphabets,numbers and special symbols
+   complex ===> It allows a+bj format
+   bool    ===> It allows True / False
+   
+   
+   
+
+
