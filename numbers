@@ -104,21 +104,29 @@ Decimal Numbers
 Binary Numbers
 Octal Numbers
 Hexadecimal Numbers
-🔢 1. Decimal Numbers
-Uses digits: 0 to 9
-Total digits = 10, so the base = 10
-Default number system in Python (no prefix needed)
-Example: x = 123 → this is treated as a decimal
-🧠 2. Binary Numbers
+
+
+
+🧠 1. Binary Numbers
 Uses digits: 0 and 1 only
 Total digits = 2, so base = 2
 Binary numbers start with prefix: 0b or 0B
 Example: x = 0b1010 → represents decimal 10
+
+🔢 2. Decimal Numbers
+Uses digits: 0 to 9
+Total digits = 10, so the base = 10
+Default number system in Python (no prefix needed)
+Example: x = 123 → this is treated as a decimal
+
+
 🌀 3. Octal Numbers
 Uses digits: 0 to 7
 Total digits = 8, so base = 8
 Octal numbers start with prefix: 0o or 0O
 Example: x = 0o12 → represents decimal 10
+
+
 🔷 4. Hexadecimal Numbers
 Uses digits: 0 to 9 and letters: A–F (or a–f)
 Total symbols = 16, so base = 16
@@ -137,12 +145,15 @@ F or f = 15
 bin(25) → '0b11001'        # Binary
 oct(25) → '0o31'           # Octal
 hex(25) → '0x19'           # Hexadecimal
+
 ✅ Example 2 – Convert 66 into other bases
 bin(66) → '0b1000010'
 oct(66) → '0o102'
 hex(66) → '0x42'
+
 ✅ Example 3 – Convert 76 to hexadecimal
 hex(76) → '0x4c'
+
 🧰 Built-in Conversion Functions in Python
 
 Function	Description
