@@ -1,18 +1,15 @@
 CONTROL STATEMENTS
-                       (OR)
-                     control structures
-                       (or)
-                     FLOW CONTROL
-                    ---------------------
+
+ (OR)
+control structures
+   (or)
+FLOW CONTROL
+---------------------
 
 ==> python supports 3 types of control statements. These are:
              1. conditional control statements
              2. Iterative control statements
              3. Transfer control statements
-
-
-  
-
                          FLOW CONTROL
                             |
                             |
@@ -85,17 +82,7 @@ conditional control statements :
               |--------JOB------------|
 
 
-                               
-                1. if statement                      
-                2. if-else  statement                
-                3. if-elif statement                                      
-                4. if-elif-else statement
-                5. single line if statement
-                6.  nested if statement
-                7.  match-case statement
-
-
-
+                            
 
 
 1. if statement : 
@@ -123,7 +110,7 @@ if True:
 
 ex-2:   
 if False:
-    print('I am true block')
+    print('I am false block')
  
 
 
