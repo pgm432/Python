@@ -8,7 +8,7 @@ match-case statement:
 
 ===> syntax:
 
-            match expression:  
+ match expression:  
                 case value-1:
                     st-1
                 case value-2:
@@ -28,6 +28,7 @@ match-case statement:
 ex-1: write a program to enter day number and print it words 
 daynum= int(input('Enter day number'))
 
+--
 match daynum:
     case 0:
         print('SUNDAY')
@@ -48,13 +49,11 @@ match daynum:
 
 
 
-
-
-
-
-
+---
 ex-2: write a program to enter month number and print it words  
 mnum = int(input('Enter month number'))
+
+
 
 match mnum:      
     case 1:
