@@ -427,3 +427,149 @@ ex-4: write a program enter any two numbers and arithmetic operator.
                 2===> subtraction
                 3===> multiplication
                 4===> division
+
+ [7:56 AM, 7/12/2025] Kusu Srinivasa Rao Python: single line if  statement:
+--------------------------
+===> A if statement written in only one line.
+     It is called single line if statement.
+
+===> syntax:
+                  st-1 if condition  else st-2
+ 
+
+
+ex-1: 
+
+print('I am True block') if True  else print('I am False block')
+
+
+ex-2:  
+
+print('I am True block') if False  else print('I am False block')
+
+
+
+ex-3:  
+n = -3
+
+print('Positive Number') if n>0  else print('Negative Number')
+                          
+
+ex-4: write a program to find given number is even number or odd number 
+
+n = int(input('Enter any number'))
+
+print('Even') if n%2==0  else print('Odd')
+
+
+
+ex-5: write a program to find biggest of two numbers  
+
+n1 = int(input('Enter first number'))
+n2 = int(input('Enter second number'))
+
+print('First number is biggest number') if n1>n2  else print('Second number is biggest number')
+[7:56 AM, 7/12/2025] Kusu Srinivasa Rao Python: nested if statement
+---------------------
+===> A if statement inside another if statement.
+     It is called nested if statement.
+             
+syntax-1:
+
+                    if condition-1:
+                        if condition-2:
+                            st-1       
+                        
+
+syntax-2: 
+
+                    if condition-1:
+                        if condition-2:
+                            st-1        
+                        else:
+                            st-2
+                    else:
+                        st-3
+
+
+syntax-3:
+                    if condition:
+                        if condition:
+                            st        
+                        elif condition:
+                            st
+                        elif condition:
+                            st
+                        elif condition:
+                            st
+                        --
+                        --
+                        elif condition:
+                            st
+                        else:
+                            st                            
+                    else:
+                        st
+
+
+
+
+
+write a program to find you are eligible for blood donation or not?
+         requirements:
+                     age>=21
+                     weight>=45       
+
+age = int(input('Enter your age'))
+
+if age>=21:  
+    weight = int(input('Enter your weight'))    
+    if weight>=45:      
+        print('you are eligible for blood donation')        
+    else:
+        print('Not eligible for blood donation')
+        print('Because')
+        print('You are Under Weight')
+else:
+    print('Not eligible for blood donation')
+    print('Because')
+    print('You are Under Age')
+
+ 
+
+
+write a program to read student information hall ticket number,
+name of the student and three subject marks.
+To find total,average , result and grade  '''
+
+htno = int(input('enter student Hall ticket number'))
+studname = input('enter student name')
+m1 = int(input('enter first subject marks'))
+m2 = int(input('enter second subject marks'))
+m3 = int(input('enter third subject marks'))
+
+total = m1+m2+m3
+avg = total/3 
+ 
+if m1>=35 and m2>=35 and m3>=35:
+    result = 'PASS'
+    if avg>=70:
+        grade='A+ Grade'        
+    elif avg>=60 and avg<70:
+        grade='A Grade'
+    elif avg>=50 and avg<60:
+        grade='B Grade'
+    elif avg>=35 and avg<50:
+        grade='C Grade'   
+else:
+    result = 'FAIL'
+    grade = 'F - Grade'
+
+ 
+print(total)
+print(avg)
+print(result)
+print(grade)
+
+
+
