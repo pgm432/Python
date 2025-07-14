@@ -1,0 +1,218 @@
+Iterative control statements
+                               (or)
+                         Repetative control statements
+                               (or)
+                            Loops
+                --------------------------------- 
+
+what is loop?
+
+===> A single statement or group of statements are executed repeatedly
+     This process is called a loop.
+
+
+     ex-1:
+
+                         condition      live or not?  yes True
+                  5:00 wakeup
+                  6:00 personel works 
+                  7:00 tea/coffee 
+                  8:00 break fast
+                  9:00 goto office
+                  10
+                  11
+                  12
+                  1
+                  2
+                  3
+                  4
+                  5
+                  6
+                  7
+                  8:00 dinner
+                  9:00 sleep
+
+
+
+        ex-2:
+                        class-1
+                        class-2
+                        class-3
+                        break
+                        class-4
+                        class-5
+
+
+
+
+
+===> python supports 2 types of Loops. These are:
+                  1. while loop
+                  2. for loop
+                  
+
+1. while loop:
+----------------
+===> A single statement or group of statements are executed repeatedly
+     until condition returns True.
+===> If the condition returns False, then, to stop the loop.
+
+==> syntax:
+    
+                 while condition:
+                     st-1
+                     st-2
+                     st-3
+                     --
+                     --
+                     st-n
+
+
+
+          Here,
+                ===> while is a  keyword.
+                ===>  condition returns either True / False 
+                ===>  ':' is called begining of the loop.
+                ===>   st-1,st-2,st-3,......st-n are called a loop.
+
+
+
+ex-1: write a program to print Good Morning  To All message 10 times  
+method-1: without while loop 
+
+print('Good Morning  To All')
+print('Good Morning  To All')
+print('Good Morning  To All')
+print('Good Morning  To All')
+print('Good Morning  To All')
+print('Good Morning  To All')
+print('Good Morning  To All')
+print('Good Morning  To All')
+print('Good Morning  To All')
+print('Good Morning  To All')
+
+
+                     
+
+
+
+
+
+method-2: using repetition operator  
+
+print('Good Morning  To All\n'*10)
+
+
+method-3: using while loop  
+
+i = 1                                             
+while i<=5:   
+    print('Good Morning  To All')
+    i=i+1
+
+  
+
+ex-2: write a program to print 1 to 10 numbers   
+i = 1                                             
+while i<=10:   
+    print(i)
+    i=i+1
+
+
+ex-3: write a program to print odd numbers between 1 to 10 numbers   
+i = 1                                             
+while i<=10:   
+    print(i)
+    i=i+2
+
+
+
+ex-4: write a program to print even numbers between 1 to 10 numbers   
+i = 2                                             
+while i<=10:   
+    print(i)
+    i=i+2
+
+
+
+ex-5: write a program to print  numbers between 10 to 1 numbers  
+i = 10                                            
+while i>=1:   
+    print(i)
+    i=i-1
+ 
+    
+
+ex-6:        
+i = 1                                                                       
+while i<=10:   
+    print(i)
+    i=i+1              
+
+
+
+
+          Here,
+          i=1  , control variable value is initialized to 1
+          i<=10, is called condition
+          i=i+1  is called , the control variable value is increased  by 1.
+
+
+
+
+
+
+
+
+ex-7:        
+                                                                   
+while i<=10:   
+    print(i)
+    i=i+1              
+
+
+    Note:
+        it returns NameError
+
+
+
+
+
+ex-8:        
+i = 1                                                                  
+while  :   
+    print(i)
+    i=i+1              
+
+
+
+    Note:
+        it returns SyntaxError
+
+
+
+ex-9:  
+i = 1
+while i<=10:   
+    print(i)
+                 
+
+
+      Note:
+          The above is executed inifinit No. of times.
+          Because, i value is always 1.
+
+ex-10:  
+i = 25
+while i<=50:
+    print(i)
+    i=i+10
+    
+
+ex-11:    
+i = 1
+while i<=10:
+    print('Inside while i value  =  ' ,i)
+    i=i+1
+else:
+    print('Inside Else i value  =  ' ,i)
