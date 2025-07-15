@@ -1,0 +1,112 @@
+range():
+-----------
+==> It is a built-in function.
+==> It returns group of values (or) list of values (or)
+    set of values (or) sequence.
+
+===> syntax:
+
+                range(start,stop,step)
+
+
+          Here,
+          ====> start indicates starting value.
+                It is optinal. by default, starting value is 0.
+          
+          ====> stop indicates starting value.
+                It is compulsory.
+                
+          ====> step indicates either increment or decrement.
+                It is optinal. By default , the value is increased by 1.
+          
+
+ex:
+1. range(1,11,1)   ====>  1,2,3,4,5,6,7,8,9,10
+2. range(1,10,2) ====>   1,3,5,7,9
+3. range(2,11,2) ====>    2,4,6,8,10
+4. range(3,29,5) ====>   3,8,13,18,23,28
+5. range(10,51,10) ====> 10,20,30,40,50
+6. range(10,0,-1)  ====> 10,9,8,7,6,5,4,3,2,1
+7. range(75,10,-25) ====> 75,50,25
+8. range(1,6,1)     ====> 1,2,3,4,5
+9. range(1,6)       ====> 1,2,3,4,5
+10. range(6)        ====> 0,1,2,3,4,5
+11. range()    ====>  Error
+12. range(1,1,1) ===> no values
+13. range(-1,-1,-1) ==> no values
+14. range(-1,-10,-1)  ==> -1,-2,-3,-4,-5,-6,-7,-8,-9
+  
+
+for loop:
+--------------
+===> while loop is always based on condition.
+===> if we want to executed 'n' NO. of times, then
+     we can use for loop only.
+
+     
+===> for loop syntax:
+    
+                for variablename in sequence:
+                       st-1
+                       st-2
+                       st-3
+                       --
+                       --
+                       st-n
+                       
+
+             Here,
+              ====>  for,in are keywords.
+              ====>  variablename represents control variable.              
+              ====> sequence represents list of values.
+                   It may be list/tuple/set/dict/range/string
+              ====> ':' indicates begining of the for loop.
+              ====> st-1,st-2,st-3.............st-n are called
+                    body of the for loop.
+
+ex-1:  write a program to display 1 to 10 numbers 
+for i in range(1,11,1):   
+    print(i)
+    
+
+ 
+ex-2:  write a program to display odd numbers between 1 to 10 numbers  
+for i in range(1,10,2):   
+    print(i)
+     
+
+ex-3:  write a program to display even numbers between 1 to 10 numbers 
+for i in range(2,11,2):   
+    print(i)
+     
+
+ex-4:  write a program to display  numbers   
+for i in range(3,29,5):   
+    print(i)
+     
+
+ex-5:  write a program to display  numbers   
+for i in range(10,51,10):   
+    print(i)
+     
+,.................  ex-14...
+
+
+ex-15:  
+for i in 'tronix':
+    print(i)
+    
+                       
+ex-16:  
+s = 'tronix hyderabad'
+
+for i in s:
+    print(i)
+    
+
+
+ex-17:   
+x = [11,22,33,44,55]
+
+for i in x:    
+    print(i)
