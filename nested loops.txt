@@ -1,0 +1,101 @@
+nested Loops:
+-----------------
+=====> A Loop  inside another Loop.
+       It is called nested Loop
+
+
+===> python supports 4 types of nested loops. These are:
+            1. nested while loop
+            2. nested for loop
+            3. for loop inside while loop  
+            4. while loop inside for loop : 
+
+            
+
+1. nested while loop:
+-------------------------
+=====> A while Loop  inside another while Loop.
+       It is called nested while Loop
+
+=====> syntax:
+              while condition:
+                  while condition:
+                      st-1
+                      st-2
+                      st-3
+                      --
+                      --
+                      st-n
+  
+
+
+    
+2. nested for loop:
+-----------------------
+=====> A for Loop  inside another for Loop.
+       It is called nested for Loop.
+
+==> syntax:
+              for variablename in sequence:
+                  for variablename in sequence:
+                      st-1
+                      st-2
+                      st-3
+                      --
+                      --
+                      st-n
+                  
+ 
+
+
+ 
+
+
+3. for loop inside while loop :
+------------------------------
+=====> A for Loop  inside another for Loop.
+       It is called nested for Loop.
+
+==> syntax:
+              while condition:
+                  for variablename in sequence:
+                      st-1
+                      st-2
+                      st-3
+                      --
+                      --
+                      st-n
+
+ 
+
+4. while loop inside for loop :
+------------------------------
+=====> A for Loop  inside another for Loop.
+       It is called nested for Loop.
+
+==> syntax:
+              
+              for variablename in sequence:
+                   while condition:
+                      st-1
+                      st-2
+                      st-3
+                      --
+                      --
+                      st-n
+
+
+write a program  using  nested for loop,  
+
+for i in range(1,6,1):    
+    for j in range(1,6,1):     
+        print(i,j)
+                     
+
+
+write a program  using  nested for loop.  
+
+for i in range(1,6,1):   
+    for j in range(1,6,1):      
+        for k in range(1,6,1):        
+            print(i,j,k)
