@@ -1,0 +1,233 @@
+3. Transfer control statements
+---------------------------------                    
+
+====> To move the cursor(control) from one part of the program
+      into another part of the program.
+      It is called transfer.
+
+      
+                ex:
+                      india  ===> USA
+
+                      HYD ==>> DELHI
+
+
+                      
+                      
+===> python supports 3 types Transfer control statements:
+    
+                   1.  break
+                   2.  continue
+                   3.   pass 
+
+1.  break:
+-----------------
+===> break is a keyword.
+===> This keyword is used, exit from a loop.
+===> It may be either while loop or for loop.
+===> It is also used nested loop.s
+==> syntax:
+                break
+
+
+
+
+ex-1:  without break statement
+method-1: without break statement
+while True:
+    print('hello')
+    print('Good Morning to all')
+    print('welcome to tronix technologies')
+    print('welcome to python course')
+
+
+    Note:
+        The above Loop is executed infinite No. of times
+
+
+method-2: without break statement  
+while True:
+    print('hello')
+    print('Good Morning to all')
+    break
+    print('welcome to tronix technologies')
+    print('welcome to python course')
+
+
+
+ex-2:  
+i=1
+while i<=10:
+    if i==7:    
+        break
+    else:
+        print(i)
+        i=i+1
+
+
+ex-3:  
+
+for i in range(1,11,1):     
+    if i==7:    
+        break
+    else:
+        print(i) 
+
+
+ex-4:  
+
+for i in 'tronix':     
+    if i=='n':         
+        break
+    else:
+        print(i) 
+
+
+ex-5:    
+
+for i in [11,22,33,44,55,66]:     
+    if i==55:         
+        break
+    else:
+        print(i)   
+ 
+
+2.  continue:
+----------------- 
+===> continue is a keyword.
+===> This keyword is used,  to move the cursor begining of the loop.
+     and the remaining statements are not executed.
+     
+===> It may be either while loop or for loop.
+===> It is also used nested loops
+==> syntax:
+                continue
+
+
+
+
+ex-1:    
+while True:
+    print('hello')
+    print('Good Morning to all')
+    continue
+    print('welcome to tronix technologies')
+    print('welcome to python course')
+
+
+
+ 
+
+
+ex-2:  
+i=1
+while i<=10:   
+    if i==7:         
+        continue
+    else:
+        print(i)
+        i=i+1
+
+
+ex-3:   
+i=1
+while i<=10:   
+    if i==7:
+        i=i+1
+        continue
+    else:
+        print(i)
+        i=i+1
+ 
+
+ex-4:   
+
+for i in range(1,11,1):       
+    if i==7:    
+        continue
+    else:
+        print(i) 
+
+
+ex-5:   
+
+for i in 'tronix':     
+    if i=='n':         
+        continue
+    else:
+        print(i) 
+
+
+ex-6:    
+
+for i in [11,22,55,33,44,55,66,77,55,88,99,55,100,200,55,300,400]:     
+    if i==55:         
+        continue
+    else:
+        print(i)   
+ 
+  
+
+
+3.  pass:
+-----------------   
+===> pass is a keyword.
+===> This keyword is used,  to create Empty statement , Empty if statement,
+     Empty while loop, Empty for loop, Empty function and to create Empty class
+
+     i.e.  do nothing , null operation,    
+ 
+==> syntax:
+                pass
+
+            
+Ex-1: To create empty statement   
+pass
+
+
+
+
+Ex-2: To create empty if statement    
+a = 11
+b = 3
+b = 33  
+
+if a>b:
+    pass
+else:
+    print('B is biggest')
+
+
+ex-3: empty while  loop  
+
+while True:
+    pass
+
+
+ex-4: empty for  loop   
+
+for i in range(1,11,1):
+    pass
+
+
+ex-5: empty for  loop   
+
+for i in range(1,5678198761,1):
+    pass
+
+
+
+ 
+ 
+ex: without break statement
+while True:
+    name = input('Enter your Name')
+    
+
+
+ex-2: with break statement 
+while True:
+    name = input('Enter your Name')
+    op = input('Do you to want to continue or not(y/n)?')
+    if op=='n':
+        break
