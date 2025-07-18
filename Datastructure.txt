@@ -1,0 +1,206 @@
+variable:
+    ==> It is used to store only one value at a time.
+           ex:       
+                   a = 4
+                   --
+                   --
+                   a = 9
+                   --
+                   --
+                   a = 11
+                   --
+                   --
+                   a = 3
+                   --
+                   --
+                   a = 45
+
+
+array variable:
+-------------------
+    ==> It is used to store morethan one value at a time.
+        But , All values must be same data type.
+
+    
+           ex:       
+                  int a[5] =  {4, 9 ,11, 3, 45 }
+
+
+===> If we want to store , morethan one value
+     with different data types, then, we can use
+     python built-in data structures.
+
+===> python supports the following built-in data structures: Tehse are.
+                1. list data structure 
+                2. tuple data structures
+                3. set data structures
+                4. dict data structures
+                5. string data structures
+                
+    
+                 LIST DATA STRUCTURE
+                 --------------------
+
+properties(characterstics):
+---------------------------
+    1. A group of  values, each value separated by commas
+       and enclosed by square brackets. It is called list.
+    2. Lists are created by using list()
+    3. All elements(values) are stored orderly.
+    4. Insertions are allowed. append(),insert(),extend()
+    5. Deletions are allowed. pop(),remove(),clear()
+    6. Duplicate elements are allowed.
+    7. Heterogeneous elements are allowed.
+    8. List is Mutable.
+    9. List is Dynamic.
+       Based on our requirement, the size can be increased or decreased.       
+    10. List suppports indexing and slicing.
+  
+    11.   List Declaration syntax:
+        
+         listname =   [ value-1,value-2,value-3,value-4,......  value-n ]
+         
+
+ex-1: To create a empty list using square brackets   
+a =   [   ]
+print(a)
+print(type(a))
+ 
+
+ex-2: To create a empty list using list()   
+a =   list()
+print(a)
+print(type(a))
+
+ex-3: To create a  list  with elements (values)  
+a =   [ 10,20,30,40,50]
+print(a)
+print(type(a))
+
+
+ex-4: To create a  list  using list() and range() function   
+a =   list(range(1,11,1))
+print(a)
+print(type(a))
+
+
+
+ 
+  Note:
+         range(1,11,1)  ==> It returns  1 to 10 numbers
+         
+         list() ==> To convert these numbers into list data type.
+ 
+
+
+ex-5: To create a  list  with duplicate elements   
+a =   [10,20,10,10,10,35,45,10,10,20,20,20   ]
+print(a)
+print(type(a))
+
+
+
+
+The Elements are 2 types:
+      1. Homogeneous elements
+      2. Heterogeneous elements
+
+
+1. Homogeneous elements:
+----------------------------
+    All elements are same data type.
+    it is called  Homogeneous elements
+
+        ex: girls hostel,boys hostel,womens engineering college...etc.
+
+
+2. Heterogeneous elements
+----------------------------
+    All elements are same data type.
+    it is called Heterogeneous elements
+
+   ex: cinema hall, shopping mall,roads,co-education ,,.....etc
+   
+
+
+
+ex-6: To create a  list  with homogeneous elements   
+a =   [ 11,22,33,44,55 ]
+print(a)
+print(type(a))
+
+
+ex-7: To create a  list  with heterogeneous elements   
+a =   [  1901,'ram kumar',77,88,99,88.00,True,'pass' ]
+print(a)
+print(type(a))
+
+
+ex-8: To create a list at runtime  
+
+a = eval(input('Enter List Elements'))
+print(a)
+print(type(a))
+
+
+arithmetic operators in lists:
+----------------------------------
+
+1. list concatenation operator(+)
+2. list repetition operator(*)
+           
+
+1. list concatenation operator(+):
+---------------------------------------
+    This operator is used concatenation(merging/joining)
+    of two or more lists.
+ex-1:  
+a = [11,22,33,44]
+b = ['apple','banana','mangoes','grapes']
+c = a+b
+print(c)
+  
+
+
+2. list repetition operator(*)
+--------------------------------' 
+ 
+    This operator is used  to repeat  a list 'n' No. of times
+ex-1:  
+a = [11,22,33,44]
+b = ['apple','banana','mangoes','grapes']
+print(a*5)
+print(b*3)
+
+accessing list elements using indexing:
+----------------------------------------   
+===> Every element has some position in the given list , known as the index.
+===> python supports 2 types of indexing.
+       1. positive indexing
+       2. negative indexing
+
+1. positive indexing starts from left to right.
+    i.e. 0,1,2,3,....size-1
+    
+2. negative indexing starts from  right to left.
+    i.e. -1,-2,-3,....-size 
+
+
+ex-1: To display list using positive indexing  
+
+a = [11,22,33,44,55]
+print(a[0])
+print(a[1])
+print(a[2])
+print(a[3])
+print(a[4])
+
+
+ex-2: To display list using negative indexing '''
+
+a = [11,22,33,44,55] 
+print(a[-1])
+print(a[-2])
+print(a[-3])
+print(a[-4])
+print(a[-5])
