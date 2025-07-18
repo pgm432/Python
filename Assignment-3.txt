@@ -1,0 +1,26 @@
+Assignment-3
+
+
+           while loop and for loop
+             Assignment-3
+        -----------------------------
+1.  Write Python program to print  1 to 10 numbers  
+2. Write Python program to find the factorial of a number provided by the user.3.  write a Python Program to Print the Fibonacci sequence
+4. Write a Python program to print the multiplication table of a given number
+5. Write a Python program to find the reverse number  of a given number  
+6. write a program to find the given number is palindrom or not
+7. Write Python program to find the sum of natural numbers up to n where n is provided by user
+8. Write a  Python program to check the number is   Armstrong number or not
+9. write a program to find a given number is  prime number or not
+10. Write a Program to add two matrices using nested loop
+11. Write a Program to multiply two matrices using nested loops
+12. Write a program to transpose a matrix using nested loop
+13. write a program to print artmstrong numbers in between the range
+14. Write  progam to find the sum of digits of a given number:
+15. Write  a  program to enter no. of days 
+16. Write a program to demonstrate for loop
+17. Write a program to play a simple quiz game using for loop
+18. Python Program to calculate Sum of Series 1²+2²+3²+….+n²
+19. Python Program to Count Number of Digits in a Number using While loop
+20. Python Program to find First Digit of a Number
+21. Python Program to find the given number is Strong Number or not
