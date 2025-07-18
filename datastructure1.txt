@@ -1,0 +1,158 @@
+Accessing list  elements using slicing:
+----------------------------------------
+      slice means small piece. i.e. part of the list.
+===> indexing is used to access only one element at a time.
+===> if we want to access morethan one element,
+     we can use slicing concept.
+
+ ===> syntax:
+                      [start:stop:step]
+
+      
+      Here,
+         ===> start indicates starting index number.
+              It is optional. By default , starting index number is zero.
+              
+         ===> stop indicates ending index number
+              It is optional. By default , end of the list
+
+         ===> step indicates, the index number, either increment (or) decrement.
+              It is optional.
+              By default , the index number is increased by 1.
+ 
+
+
+
+
+nindex  ==> -18  -17-16-15-14 -13-12-11-10  -9  -8 -7  -6  -5  -4   -3 -2  -1    
+listname ==>  11  22 33 44 55  66 77 88 99 100 200 300 400 500 600 700 800 900
+pindex   ==>  0    1  2  3  4   5  6  7  8  9   10  11  12  13  14  15  16  17
+
+ex-1:      
+a = [11,22,33,44,55,66,77,88,99,100,200,300,400,500,600,700,800,900]
+#print(a[3:16:1])       
+#print(a[3:16:4])         
+#print(a[1:17:1])      
+#print(a[   :17:1])   
+#print(a[   : :  1])  
+#print(a[   :  :   ])  
+#print(a[   :  : 3  ]) 
+#print(a[   : 22 :    ]) 
+#print(a[ -1  :   :  -1  ]) 
+#print(a[     :   :  -1  ]) 
+#print(a[ -5  : -12  :  -1  ])
+#print(a[2:5:-1])
+print(a[2:-5:-1])                   
+
+
+
+ 
+
+mutable:
+------------
+=====> The value can be changed at runtime.
+       It is called mutable.
+    
+        ex-1: age,weather,date , time,bank balance,...etc.
+        ex-2: list,dict,.  
+
+
+
+Immutable:
+------------
+=====> The value cannot be changed at runtime.
+       It is called Immutable.
+    
+    ex-1: name,surname,color,
+    ex-2: tuple,set,string.
+
+
+
+List Vs. Mutable:
+---------------------
+==> once we create a list, the values can be changed at runtime.
+    It is called list mutable.
+ex-1:  
+a = [11,22,33,44,55]
+print(a)
+a[0]='TRONIX'
+print(a)
+
+
+ex-2:  
+a = [11,22,33,44,55]
+print(a)
+a[0]='TRONIX'
+a[-1]=99
+a[2]='hyderabad'
+print(a)
+ 
+ 
+
+while loop in list:
+----------------------- 
+
+
+x = [11,22,33,44,55]
+i = 0
+
+while i<len(x):   
+    print(x[i])    
+    i=i+1
+
+
+ 
+for loop in list:
+----------------------- 
+method-1: 
+
+for i in [11,22,33,44,55]:
+    print(i)
+    
+
+
+method-2: 
+x = [11,22,33,44,55]
+for i in x:
+    print(i)
+    
+
+ 
+built-in functions (or) methods in list data structure:
+----------------------------------------------------------
+            1. len()
+            2. max()
+            3. min()
+            4. sum()
+            5. append()
+            6. insert()
+            7. extend()
+            8. pop()
+            9. remove()                
+            10. clear()
+            11. copy()
+            12. reverse()
+            13. sort()
+            14. count()
+            15. index()
+
+
+1. len():
+    This function returns No. of elements present in a list.
+
+    
+2. max():
+    This function returns Highest value in a list.
+
+3. min():
+    This function returns Lowest value in a list.
+
+4. sum():
+    This function returns sum of list elements 
+
+ex-1:  
+a = [11,22,5,88,33,12]
+print('NO. of elements  =  ', len(a))
+print('Highest value  =  ',max(a))
+print('Lowest value  =  ',min(a))
+print('sum of List elements   =  ',sum(a))
