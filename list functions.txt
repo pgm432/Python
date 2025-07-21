@@ -1,5 +1,26 @@
 Inserting elements into a list:
--------------------------------
+
+1. len():
+    This function returns No. of elements present in a list.
+
+    
+2. max():
+    This function returns Highest value in a list.
+
+3. min():
+    This function returns Lowest value in a list.
+
+4. sum():
+    This function returns sum of list elements 
+
+ex-1:  
+a = [11,22,5,88,33,12]
+print('NO. of elements  =  ', len(a))
+print('Highest value  =  ',max(a))
+print('Lowest value  =  ',min(a))
+print('sum of List elements   =  ',sum(a))
+
+
 5. append():
     This function is used to add new element end of the list.
     It is used to add only one value at a time
