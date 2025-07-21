@@ -1,0 +1,268 @@
+Inserting elements into a list:
+-------------------------------
+5. append():
+    This function is used to add new element end of the list.
+    It is used to add only one value at a time
+    
+
+ex-1:  
+a = [11,22,33,44]
+print(a)
+a.append(99)
+print(a)
+
+
+
+ex-2:  
+a = [11,22,33,44]
+print(a)
+a.append(55)
+a.append(66)
+a.append(77)
+a.append(88)
+a.append(99)
+print(a)
+
+
+ex-3:  
+fruits = [  ]
+print(fruits)
+fruits.append('apple')
+fruits.append('orange')
+fruits.append('mangoes')
+fruits.append('grapes')
+fruits.append('banana') 
+print(fruits)
+
+
+ex-4:  
+names = [  ]
+print(names )
+names .append('mohan')
+names .append('sravya')
+names .append('joshitha')
+names .append('laxmi')
+names .append('vamshi')
+names .append('rajesh') 
+print(names )
+
+
+ 
+6. insert():
+    This function is used to add new element at given Index number.
+    It is used to add only one value at a time
+
+===> syntax:
+             insert(indexnumber,value)
+
+ex-1:  
+a = [11,22,33,44]
+print(a)
+a.insert(1,99)                                
+print(a)
+
+
+
+ex-2:   
+a = [11,22,33,44]
+print(a)
+a.insert(-1,99)                              
+print(a)
+
+
+7. extend():
+    This function is used to add new element end of the list.
+    It is used to add morethan one value at a time
+    
+ex-1:     
+names = [  ]
+print(names)
+names.extend(['mohan','sravya','joshitha','laxmi','vamshi','rajesh']) 
+print(names )
+
+ex-2:   
+fruits = [  ]
+print(fruits)
+fruits.extend(['apple','orange','mangoes','grapes','banana']) 
+print(fruits)
+
+
+ex-3:  
+            
+a = [11,22,33,44]
+print(a)
+a.extend([55,66,77,88,99])
+print(a)
+
+
+ex-4:  
+b = [55,66,77,88,99]
+a = [11,22,33,44]
+print(a)
+a.extend(b)
+print(a)
+
+
+
+ 
+
+deleting elements from a list:
+----------------------------------
+8. pop():
+case-1: This function is used to remove last element from a list.
+    
+ex-1:  
+a = [11,22,33,44]
+print(a)
+a.pop()
+print(a)
+
+
+ex-2:  
+a = [11,22,33,44]
+print(a)
+a.pop()
+a.pop()
+a.pop()
+print(a)
+
+ex-3:   
+a = [11,22,33,44]
+print(a)
+a.pop()
+a.pop()
+a.pop()
+a.pop()
+a.pop()
+a.pop()
+print(a)
+
+
+
+case-2: This function is used to remove given index number value from a list 
+    ===> syntax:
+                       pop(indexnumber)
+ex-1:   
+a = [11,22,33,44]
+print(a)
+a.pop(1)
+a.pop(0)
+print(a) 
+  
+ 
+9. remove():
+    This function is used to remove given element from a list.
+    if the given element is prsent, then, remove it .
+    if the given element is not present, then, it returns ValueError.
+    
+ex-1:  
+a = [11,22,33,44]
+print(a)
+a.remove(22)
+a.remove(44)
+a.remove(11)
+print(a)
+
+
+ex-2:  
+a = [11,22,33,44]
+print(a)
+a.remove(202)
+a.remove(44)
+a.remove(11)
+print(a)
+
+           
+10. clear():
+    This function is used to remove all elements from a list.
+    
+ex-1: 
+a = [11,22,33,44]
+print(a)
+a.clear()
+print(a)
+
+11. copy():
+    This function is used to copy all elements from one list
+     into another list.
+    
+ex-1:  
+a = [11,22,33,44]
+b = a.copy()
+print(a) 
+print(b) 
+
+
+12. reverse():
+==> This function is used to arrange elements in reverse order.
+ex-1: 
+a = [11,22,33,44]
+print(a)
+a.reverse()
+print(a)
+
+
+13. sort():
+==> This function is used to arrange elements,
+    in either ascending order (or) descending order.
+
+==> ascending order means lowest value to highest value.
+
+==> descending order highest value to lowest value.
+
+==> By default, sorting order is ascending order
+
+ex-1:  To arrange elements in ascending order   
+a = [11,2,63,44,10,5]
+print(a)
+a.sort()
+print(a)
+
+ex-2:  To arrange elements in descending order
+method-1:   
+a = [11,2,63,44,10,5]
+print(a)
+a.sort()
+a.reverse()
+print(a)
+
+
+method-2:   
+a = [11,2,63,44,10,5]
+print(a)
+a.sort(reverse=True)
+print(a)
+
+
+
+14. count():   
+
+==> if the given element present, it returns No. of occurences.
+==> if the given element is not present, then, it returns zero.
+
+ex-1:  
+a = [11,22,11,11,11,66,88,22,22,22,22,22,22,66]
+print(a.count(66))
+print(a.count(88))
+print(a.count(11))
+print(a.count(22))
+print(a.count(99))
+print(a.count(125))
+print(a. 
+
+
+15. index():
+==> This function returns index number of the given element.
+
+==> if the given element present, it returns index number.
+==> if the given element is not present, then, it returns ValueError.
+
+ex-1:  
+a = [11,22,11,11,11,66,88,22,22,22,22,22,22,66]
+print(a.index(66))
+print(a.index(88))
+print(a.index(11))
+print(a.index(22))
+print(a.index(99))
+print(a.index(125))
+print(a.index('banana'))
