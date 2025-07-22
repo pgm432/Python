@@ -1,0 +1,395 @@
+TUPLE DATA STRUCTURE
+--------------------
+
+properties(characterstics):
+---------------------------
+    1. A group of  values, each value separated by commas
+       and enclosed by Parenthesis. It is called tuple.
+    2. Tuples are created by using tuple()
+    3. All elements(values) are stored orderly.
+    4. Insertions are not allowed.  
+    5. Deletions are not allowed.  
+    6. Duplicate elements are allowed.
+    7. Heterogeneous elements are allowed.
+    8. tuple is Immutable.
+    9.  tuple is static
+              
+    10. tuple suppports indexing and slicing.
+  
+    11.   List Declaration syntax:
+        
+          tuplename =   ( value-1,value-2,value-3,value-4,......  value-n  )
+         
+    12. In tuples, parenthesis are optional.
+        It is compulsory.
+        
+ex-1: To create a empty tuple using parenthesis  
+t =   (   )
+print(t)
+print(type(t)) 
+
+ 
+ 
+ex-2: To create a empty tuple using tuple()  '
+t =   tuple()
+print(t)
+print(type(t))
+ 
+ 
+ex-3: To create a  list  with elements (values)   
+t =   ( 10,20,30,40,50 ) 
+print(t)
+print(type(t))
+
+ 
+ 
+ex-4: To create a  tuple using tuple() and range() function  
+t =   tuple(range(1,11,1))
+print(t)
+print(type(t))
+
+
+  Note:
+         range(1,11,1)  ==> It returns  1 to 10 numbers
+         
+         tuple() ==> To convert these numbers into tuple data type.
+ 
+ex-5: To create a  tuple  with duplicate elements   
+t =    ( 10,20,10,10,10,35,45,10,10,20,20,20  )
+print(t)
+print(type(t))
+
+The Elements are 2 types:
+      1. Homogeneous elements
+      2. Heterogeneous elements
+
+
+1. Homogeneous elements:
+----------------------------
+    All elements are same data type.
+    it is called  Homogeneous elements
+
+        ex: girls hostel,boys hostel,womens engineering college...etc.
+
+
+2. Heterogeneous elements
+----------------------------
+    All elements are same data type.
+    it is called Heterogeneous elements
+
+   ex: cinema hall, shopping mall,roads,co-education ,,.....etc
+   
+
+ex-6: To create a  tuple  with homogeneous elements   
+t =   ( 11,22,33,44,55 )
+print(t)
+print(type(t))
+
+
+ex-7: To create a  list  with heterogeneous elements   
+a =   (  1901,'ram kumar',77,88,99,88.00,True,'pass' )
+print(a)
+print(type(a))
+
+
+ex-8: To create a tuple at runtime   
+
+a = eval(input('Enter tuple Elements'))
+print(a)
+print(type(a))
+
+
+ex-9: To create a tuple without parenthesis  
+t =  11,22,33,44,55 
+print(t)
+print(type(t))
+
+
+ex-10: To create a  single valued tuple ,using comma  
+t =  11,
+print(t)
+print(type(t))
+
+
+ex-11: To create a  single valued tuple ,using comma    
+t =  (11,)
+print(t)
+print(type(t))
+ 
+arithmetic operators in tuples:
+----------------------------------   
+
+1. tuple concatenation operator(+)
+2. tuple repetition operator(*)
+           
+
+1. tuple concatenation operator(+):
+---------------------------------------
+    This operator is used concatenation(merging/joining)
+    of two or more tuples.
+ex-1:   
+a = 11,22,33,44
+b = 'apple','banana','mangoes','grapes'
+c = a+b
+print(c)
+  
+
+
+2. list repetition operator(*)
+--------------------------------' 
+ 
+    This operator is used  to repeat  a tuple 'n' No. of times
+ex-1:  
+a = 11,22,33,44
+b = 'apple','banana','mangoes','grapes'
+print(a*5)
+print(b*3)
+
+
+Accessing tuple elements using indexing:
+----------------------------------------   
+===> Every element has some position in the given tuple, known as the index.
+===> python supports 2 types of indexing.
+       1. positive indexing
+       2. negative indexing
+
+1. positive indexing starts from left to right.
+    i.e. 0,1,2,3,....size-1
+    
+2. negative indexing starts from  right to left.
+    i.e. -1,-2,-3,....-size 
+
+
+ex-1: To display tuple using positive indexing  
+
+a =  11,22,33,44,55 
+print(a[0])
+print(a[1])
+print(a[2])
+print(a[3])
+print(a[4])
+
+
+ex-2: To display tuple using negative indexing 
+
+a =  11,22,33,44,55  
+print(a[-1])
+print(a[-2])
+print(a[-3])
+print(a[-4])
+print(a[-5])
+
+ 
+Accessing tuple  elements using slicing:
+----------------------------------------
+      slice means small piece. i.e. part of the list.
+===> indexing is used to access only one element at a time.
+===> if we want to access morethan one element,
+     we can use slicing concept.
+
+ ===> syntax:
+                      [start:stop:step]
+
+      
+      Here,
+         ===> start indicates starting index number.
+              It is optional. By default , starting index number is zero.
+              
+         ===> stop indicates ending index number
+              It is optional. By default , end of the tuple
+
+         ===> step indicates, the index number, either increment (or) decrement.
+              It is optional.
+              By default , the index number is increased by 1.
+ 
+
+
+nindex  ==> -18  -17-16-15-14 -13-12-11-10  -9  -8 -7  -6  -5  -4   -3 -2  -1    
+listname ==>  11  22 33 44 55  66 77 88 99 100 200 300 400 500 600 700 800 900
+pindex   ==>  0    1  2  3  4   5  6  7  8  9   10  11  12  13  14  15  16  17
+
+ex-1:      
+a =  11,22,33,44,55,66,77,88,99,100,200,300,400,500,600,700,800,900 
+#print(a[3:16:1])       
+#print(a[3:16:4])         
+#print(a[1:17:1])      
+#print(a[   :17:1])   
+#print(a[   : :  1])  
+#print(a[   :  :   ])  
+#print(a[   :  : 3  ]) 
+#print(a[   : 22 :    ]) 
+#print(a[ -1  :   :  -1  ]) 
+#print(a[     :   :  -1  ]) 
+#print(a[ -5  : -12  :  -1  ])
+#print(a[2:5:-1])
+print(a[2:-5:-1])                   
+
+
+mutable:
+------------
+=====> The value can be changed at runtime.
+       It is called mutable.
+    
+        ex-1: age,weather,date , time,bank balance,...etc.
+        ex-2: list,dict,.  
+
+
+
+Immutable:
+------------
+=====> The value cannot be changed at runtime.
+       It is called Immutable.
+    
+    ex-1: name,surname,color,
+    ex-2: tuple,set,string.
+
+
+tuple Vs. immutable:
+--------------------- 
+==> once we create a tuple, the values cannot be changed at runtime.
+    It is called tuple Immutable.
+ex-1:   
+t = 11,22,33,44,55
+print(t)
+t[0]='TRONIX'
+print(t) 
+ 
+ex-2:  
+a =  11,22,33,44,55 
+print(a)
+a[0]='TRONIX'
+a[-1]=99
+a[2]='hyderabad'
+print(a)
+ 
+ 
+
+while loop in tuple:
+----------------------- 
+
+
+x = 11,22,33,44,55 
+i = 0
+
+while i<len(x):   
+    print(x[i])    
+    i=i+1
+
+
+ 
+for loop in tuple :
+----------------------- 
+method-1: 
+
+for i in 11,22,33,44,55:
+    print(i)
+    
+
+
+method-2: 
+x = 11,22,33,44,55
+for i in x:
+    print(i)
+    
+built-in functions (or) methods in tuple data structure:
+----------------------------------------------------------
+            1. len()
+            2. max()
+            3. min()
+            4. sum()
+            5. count()
+            6. index()
+
+1. len():
+    This function returns No. of elements present in a tuple.
+
+    
+2. max():
+    This function returns Highest value in a tuple
+
+3. min():
+    This function returns Lowest value in a tuple
+
+4. sum():
+    This function returns sum of tuple elements 
+
+ex-1:  
+t = 11,22,5,88,33,12
+print('NO. of elements  =  ', len(t))
+print('Highest value  =  ',max(t))
+print('Lowest value  =  ',min(t))
+print('sum of List elements   =  ',sum(t))
+   
+5. count():   
+
+==> if the given element present, it returns No. of occurences.
+==> if the given element is not present, then, it returns zero.
+
+ex-1:  
+t =  11,22,11,11,11,66,88,22,22,22,22,22,22,66
+print(t.count(66))
+print(t.count(88))
+print(t.count(11))
+print(t.count(22))
+print(t.count(99))
+print(t.count(125))
+ 
+6. index():
+==> This function returns index number of the given element.
+
+==> if the given element present, it returns index number.
+==> if the given element is not present, then, it returns ValueError.
+
+ex-1:   
+t =  11,22,11,11,11,66,88,22,22,22,22,22,22,66 
+print(t.index(66))
+print(t.index(88))
+print(t.index(11))
+print(t.index(22))
+print(t.index(99))
+print(t.index(125))
+print(t.index('banana'))
+
+
+nested list:
+-----------------
+===> A List inside another List.
+    It is called  nested List.
+
+ex-1:  
+a = [11,22,[10,20,30],33,44]
+print(a)
+
+
+                                 
+ex-2:  
+a = [11,22,[10,20,30],33,44]
+print(a[2])
+
+ex-3:  
+a = [11,22,[10,20,30],33,44]
+print(a[2][0])
+print(a[2][1])
+print(a[2][2])
+
+
+ex-4:  
+a = [ [1,2,3],[4,5,6],[7,8,9] ]
+
+print(a[0])
+print(a[1])
+print(a[2])
+
+
+| Feature               | List                          | Tuple                         |
+|-----------------------|-------------------------------|-------------------------------|
+| Syntax                | [1, 2, 3]                     | (1, 2, 3)                     |
+| Mutability            | Mutable (can be changed)      | Immutable (cannot be changed)|
+| Methods Available     | Many (append, remove, etc.)   | Few (count, index)           |
+| Performance           | Slower than tuples            | Faster than lists            |
+| Use Case              | When data may change          | When data should not change  |
+| Memory Usage          | More memory                   | Less memory                  |
+| Can Contain Mixed Types | Yes                        | Yes                          |
+| Nesting               | Can be nested                 | Can be nested                |
+| Iteration             | Slightly slower               | Slightly faster              |
+| Hashable (can be dict key) | No (unless frozen)      | Yes (if all elements are immutable) |
