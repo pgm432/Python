@@ -16,7 +16,7 @@ properties(characterstics):
               
     10. tuple suppports indexing and slicing.
   
-    11.   List Declaration syntax:
+    11.   tuple Declaration syntax:
         
           tuplename =   ( value-1,value-2,value-3,value-4,......  value-n  )
          
