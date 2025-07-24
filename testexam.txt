@@ -1,0 +1,69 @@
+    			    PYTHON TEST 
+Date: 23-07-2025                                                                                                         batch: 8am
+===============================
+ 1. Which of the following is the correct syntax for an if statement in Python?
+a) if condition then:
+b) if condition:
+c) if condition do:
+d) if: condition
+2. What will the following code print?
+x = 10
+if x > 5:
+    print("Greater")
+else:
+    print("Smaller")
+a) Greater                         b) Smaller                   c) Error           d) None of the above
+3. How many times will the following code print "Hello"?
+i = 0
+while i < 3:
+    print("Hello")
+    i += 1
+    
+a) 0 times                      b) 1 time                     c) 2 times         d) 3 times
+
+
+
+4. What will be the output of the following code?
+for i in range(5, 1, -1):
+    print(i)
+    
+a) 5 4 3 2                   b) 5 4 3 2 1                      c) 4 3 2 1          d) 5 4 3
+5. Which of the following is the correct syntax to create an infinite while loop?
+a) while True:                                      b) while(1):
+c) while 1 == 1:                                   d) All of the above
+6. Write a Python program using an if statement
+   that checks whether a number is positive, negative, or zero.
+
+7. Write a Python program that prints all even numbers  
+between 1 and 20 using a for loop.
+8. Write a Python program that sums all numbers
+   between 1 and 50 using a while loop and prints the result.
+9. Write a program that prints the factorial of a number using a for loop.
+   (Use input() to take the number from the user.)
+10. What will be the output of the following code?
+x = 0
+while x < 5:
+    if x % 2 == 0:
+        print("Even")
+    else:
+        print("Odd")
+    x += 1
+ 
+
+   
+ 
+11. Write a Python program using a for loop to print the following pattern:
+1
+12
+123
+1234
+12345
+
+12. Write a Python program using a while loop
+   that prints all prime numbers between 1 and 100.
+
+13. Write a Python program to calculate the sum of the digits of a number
+  using a while loop. 
+For example, for the number 123, the program should return 1 + 2 + 3 = 6.
+14. Write a Python program that prints the Fibonacci sequence up to n terms using a while loop, where n is given by the user.
+15. Create a program that asks the user to enter an integer, then uses a while loop to reverse the digits of the number. For example, if the input is 1234, the output should be 4321.
