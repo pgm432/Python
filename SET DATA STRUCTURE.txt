@@ -1,0 +1,361 @@
+SET DATA STRUCTURE
+                 --------------------
+
+properties(characterstics):
+---------------------------
+    1. A group of  values, each value separated by commas
+       and enclosed by curly braces. It is called set.
+    2. sets are created by using set()
+    3. All elements(values) are stored unorderly.
+       i.e. A group of unordered elements is  called a set.
+       
+    4. Insertions are allowed. add(),update()
+    5. Deletions are allowed. pop(),remove(),discard(),clear()
+    6. Duplicate elements are not allowed.
+    7. Heterogeneous elements are allowed.
+    8. set is Immutable.
+    9. set is Dynamic.
+       Based on our requirement, the size can be increased or decreased.       
+    10. set does not suppports indexing and slicing.
+  
+    11.   set Declaration syntax:
+        
+        setname =   { value-1,value-2,value-3,value-4,......  value-n }
+         
+ 
+
+ex-1: To create a empty set using square brackets    
+s =   {   }
+print(s)
+print(type(s))
+
+
+     Note:
+         Here, s is called dictionary data type.
+         Empty sets are created by using set() function only 
+
+ 
+ex-2: To create a empty set using set()  
+s =   set()
+print(s)
+print(type(s))
+
+   
+ex-3: To create a  set  with elements (values)   
+s =   { 10,20,30,40,50 }
+print(s)
+print(type(s))
+
+ 
+
+
+ex-4: To create a  set  using set() and range() function   
+s =   set(range(1,11,1))
+print(s)
+print(type(s))
+
+
+
+ 
+  Note:
+         range(1,11,1)  ==> It returns  1 to 10 numbers
+         
+         set() ==> To convert these numbers into set data type.
+ 
+
+
+ex-5: To create a  set  with duplicate elements   
+
+s =   { 10,20,10,10,10,35,45,10,10,20,20,20 }
+print(s)
+print(type(s))
+print(len(s))
+ 
+ 
+The Elements are 2 types:
+      1. Homogeneous elements
+      2. Heterogeneous elements
+
+
+1. Homogeneous elements:
+----------------------------
+    All elements are same data type.
+    it is called  Homogeneous elements
+
+        ex: girls hostel,boys hostel,womens engineering college...etc.
+
+
+2. Heterogeneous elements
+----------------------------
+    All elements are same data type.
+    it is called Heterogeneous elements
+
+   ex: cinema hall, shopping mall,roads,co-education ,,.....etc
+   
+
+
+
+ex-6: To create a  set  with homogeneous elements   
+s =   {11,22,33,44,55 }
+print(s)
+print(type(s))
+
+
+ex-7: To create a  set  with heterogeneous elements   
+s =   { 1901,'ram kumar',77,88,99,88.00,True,'pass' }
+print(s
+print(type(s))
+
+
+ex-8: To create a set at runtime  
+
+s = eval(input('Enter List Elements'))
+print(s)
+print(type(s))
+
+
+
+         
+for loop in set:
+-----------------------  
+ 
+for i in {11,22,33,44,55}:
+    print(i)
+    
+
+
+ 
+
+
+
+
+
+    
+
+  
+built-in functions (or) methods in list data structure:
+----------------------------------------------------------  
+            1. len()
+            2. max()
+            3. min()
+            4. sum()
+            5. add()
+            6. update()
+            7. pop() 
+            8. remove()
+            9. discard()                
+            10. clear()
+            11. copy()
+             
+
+
+mathematical functions in sets:
+--------------------------------------
+        1. union()
+        2. intersection()
+        3. difference()
+        4. symmetric_difference()
+        5. issubset()
+        6. issuperset()
+        7. isdisjoint()    
+
+
+
+
+ 
+
+ 
+1. len():
+    This function returns No. of elements present in a set
+
+    
+2. max():
+    This function returns Highest value in a set.
+
+3. min():
+    This function returns Lowest value in a set
+
+4. sum():
+    This function returns sum of set elements 
+
+ex-1:   
+s = {  11,22,5,88,33,12  }
+print('NO. of elements  =  ', len(s))
+print('Highest value  =  ',max(s))
+print('Lowest value  =  ',min(s))
+print('sum of List elements   =  ',sum(s))
+
+
+ 
+Inserting elements into a set:
+-------------------------------
+ 
+5. add():
+====>    This function is used to add new element into a set.
+         It is used to add only one element.
+
+ex-1:  
+s = {11,22,33}
+print(s)
+s.add(99)
+s.add(88)
+s.add(77)
+s.add(66)
+print(s)
+
+
+ex-2:  
+names = set()
+print(names)
+names.add('ram')
+names.add('sita')
+names.add('laxman')
+names.add('bharat')
+print(names)
+
+ 
+ 
+
+
+    
+6. update():
+====>    This function is used to add new elements into a set.
+         It is used to add morethan one element.
+
+ex-1:   
+s = {11,22,33}
+print(s)
+s.update({99,88,77,66,55,44})
+print(s)
+
+ex-2:   
+s = {11,22,33}
+print(s)
+s.update([99,88,77,66,55,44])
+print(s)
+
+
+ex-3:  
+s = {11,22,33}
+print(s)
+s.update((99,88,77,66,55,44))
+print(s)
+
+
+ex-4:   
+s = {11,22,33}
+print(s)
+s.update(range(1,11,1))
+print(s)
+
+
+ex-5:    
+s = {11,22,33}
+print(s)
+s.update('tronix')
+print(s)
+
+
+ex-6:    
+s = {11,22,33}
+print(s)
+s.update(['tronix','technologies','hyderabad','gurumohan'])
+print(s)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Removing elements from a set:  
+
+7. pop() :
+    This function is used to delete random element  from a set.
+    
+ex-1:   
+s = {11,22,33,44,55,66}
+print(s)
+s.pop()
+s.pop()
+print(s)
+
+
+ 
+ 
+8. remove():
+    This function is used to delete given element  from a set.
+    if the given element is present, then, delete it.
+    if the given element is not present, then, it returns KeyError.
+ex-1: 
+s = {11,22,33,44,55}
+print(s)
+s.remove(44)
+s.remove(22)
+s.remove(55)
+print(s)
+
+ex-2:  
+s = {11,22,33,44,55}
+print(s)
+s.remove(2404)
+s.remove(22)
+s.remove(55)
+print(s) 
+    
+
+9. discard() :
+    This function is used to delete given element  from a set.
+    if the given element is present, then, delete it.
+    if the given element is not present, then, it returns None.
+ex-1:  
+s = {11,22,33,44,55}
+print(s)
+s.discard(44)
+s.discard(22)
+s.discard(55) 
+s.discard(2404)
+s.discard(33) 
+print(s)
+
+
+10. clear():
+    This function is used to delete all elements from a set.
+    
+ex-1:  
+s = {11,22,33,44,55,66}
+print(s)
+s.clear()
+print(s)
+
+11. copy():
+    This function is used to copy all elements from
+    one set into another set.
+    
+ex-1:  
+s = {11,22,33,44,55,66}
+s1 = s.copy()
+print(s)
+print(s1)
+
+
+what are iterables in python?
+----------------------------
+     Iterable means more than one value.
+     python supports the following iterables. these are:
+              list
+              tuple
+              set
+              dict
+              range
+              string
