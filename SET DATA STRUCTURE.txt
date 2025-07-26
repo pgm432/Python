@@ -1,5 +1,5 @@
 SET DATA STRUCTURE
-                 --------------------
+--------------------
 
 properties(characterstics):
 ---------------------------
@@ -113,26 +113,13 @@ s = eval(input('Enter List Elements'))
 print(s)
 print(type(s))
 
-
-
-         
+   
 for loop in set:
 -----------------------  
  
 for i in {11,22,33,44,55}:
     print(i)
     
-
-
- 
-
-
-
-
-
-    
-
-  
 built-in functions (or) methods in list data structure:
 ----------------------------------------------------------  
             1. len()
@@ -261,21 +248,6 @@ s = {11,22,33}
 print(s)
 s.update(['tronix','technologies','hyderabad','gurumohan'])
 print(s)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Removing elements from a set:  
