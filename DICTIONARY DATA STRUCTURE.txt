@@ -1,0 +1,386 @@
+DICTIONARY DATA STRUCTURE
+                 -----------------============---
+
+properties(characterstics):
+---------------------------
+    1. A group of  key-value pairs, each pair separated by commas
+       and enclosed by curly braces. It is called dictionary.
+         ex:
+                          key          value
+                          -----         ------
+                         empid       employee name
+                         htno        student name
+                         aadharno    person name
+                         phoneno     person name
+                         pan no      person name
+                         plotno      citizen name
+                         accno       customer name
+                         password    username
+
+                         
+    2. dictionaries are created by using dict()
+    3. All elements(values) are stored orderly.
+    4. Insertions are allowed. setdefault(),update(0
+    5. Deletions are allowed. pop(),popitem(),clear()
+    6. Duplicate keys are not allowed.
+        duplicate values are allowed.
+    7. Heterogeneous elements are allowed.
+    8. dict is Mutable.
+    9. dict is Dynamic.
+       Based on our requirement, the size can be increased or decreased.       
+    10. dict does not suppports indexing and slicing.
+        It supports only keys.
+
+    11.  dict Declaration syntax:
+        
+    dictname =  { key-1:value-1,key-2:value-2, .......key-n:value-n  }
+
+
+
+ex-1: To create  a empty dictionary  using curly braces   
+d =  {    }
+print(d)
+print(type(d))
+
+
+ex-2: To create  a empty dictionary  using dict()   
+d =  dict()
+print(d)
+print(type(d))
+
+
+ex-3: To create  a   dictionary with keys and values 
+d =  {1901:'ram',1902:'siva', 1903:'sita',1904:'laxman'  }
+print(d)
+print(type(d))
+
+
+
+ex-3: To create  a   dictionary with keys and values   
+d =  {1901:['ram',77,88,99,'pass'],1902:['siva',88,99,88,'pass']}
+print(d)
+print(type(d))
+
+
+ex-4: To create  a   dictionary with keys and values   
+d =  {1901:['ram',77,88,99,'pass'],1902:['siva',88,99,88,'pass']}
+print(d)
+print(type(d))
+
+
+ex-5: To create a course dictionary, course id and course name   
+d = {101:'python',102:'c',103:'c++',104:'java'}
+print(d)
+print(type(d))
+
+
+ex-6: To create a course dictionary, course id and course name, with duplicate values
+d = {101:'python',102:'c',103:'c++',104:'java',105:'python',106:'python'}
+print(d)
+print(type(d))
+
+
+ex-6: To create a course dictionary, course id and course name,
+      with duplicate keys  
+d = {101:'python',102:'c' ,102:'AI',101:'PYTHON FULL STACK'}
+print(d)
+print(type(d))
+
+
+ 
+
+
+dict vs. mutable:
+-------------------
+===> The values can be changed at runtime.
+     It is called mutable.
+     i.e. update.
+ex-1: 
+
+d = {101:'python',102:'c',103:'c++',104:'java'}
+print(d)
+d[102]='Django'
+d[103]='SQL'
+d[103]='POWERBI'
+print(d)
+
+
+
+
+ 
+
+built-in functions (or) methods in dictionaries:
+------------------------------------------------------
+            1. len()
+            2. max()
+            3. min()
+            4. sum()
+            5. setdefault()
+            6. update()
+            7. pop()
+            8. popitem()
+            9. clear()
+            10. copy()
+            11. get()
+            12. keys()
+            13. values()
+            14. items()
+            15. fromkeys()
+            
+
+
+1. len(): It returns No. of elements present in a dictionary.
+2. max(): It returns highest key
+3. min(): It returns Lowest key
+4. sum(): It returns sum of  keys.
+
+ex-1:  
+d = {101:'python',102:'c',103:'c++',104:'java'}
+print('NO. of elements   =  ', len(d)) 
+print('Highest key  = ' ,max(d)) 
+print('Lowest key  = ',min(d)) 
+print('sum of keys  =' , sum(d))
+ 
+
+
+
+5. setdefault():
+    This function is used to add new element end of the dictionary.
+    It is used to add only one element.
+====> syntax:
+                 setdefault(key,value)
+                 
+    
+ex-1:  
+d = {101:'python',102:'c',103:'c++',104:'java'}
+print(d)
+d.setdefault(105,'AI')
+d.setdefault(106,'ML')
+print(d)
+
+
+ex-2:    
+d = { }
+print(d)
+d.setdefault(105,'AI')
+d.setdefault(106,'ML')
+print(d)
+
+ 
+    
+6. update():
+    This function is used to add new elements end of the dictionary.
+    It is used to add morethan one element.
+ex-1:  
+d = {101:'python',102:'c',103:'c++',104:'java'}
+print(d)
+d.update({105:'AI',106:'ML',107:'DL',108:'DATA SCIENCE'})
+ 
+print(d)
+  
+ 
+
+
+deleting elements from a dictionary:  
+----------------------------------------
+7. pop():
+    This function is used to delete given element  from a dictionary.
+ex-1:               
+d = {101:'python',102:'c',103:'c++',104:'java'}
+print(d)
+d.pop(102)
+d.pop(104)
+d.pop(103)
+print(d)
+
+
+ex-2:  
+d = {101:'python',102:'c',103:'c++',104:'java'}
+print(d)
+d.pop(402)
+d.pop(104)
+d.pop(103)
+print(d)
+
+
+Note:
+    if the given key is present, then, remove it.
+    if the given key is not present, then, it returns KeyError.
+    
+
+  
+
+8. popitem():
+    This function is used to delete last element  from a dictionary.
+ex-1:              
+d = {101:'python',102:'c',103:'c++',104:'java'}
+print(d)
+d.popitem()
+d.popitem()
+d.popitem()
+print(d)
+ 
+ 
+9. clear():
+    This function is used to delete all elements from a dictionary.
+    
+ex-1:            
+d = {101:'python',102:'c',103:'c++',104:'java'}
+print(d)
+d.clear()
+print(d)
+
+
+10. copy():
+    This function is used to copy all elements,
+    from one dictionary into another dictionary.
+    
+ex-1:            
+d = {101:'python',102:'c',103:'c++',104:'java'}
+d1 = d.copy()
+print(d)
+print(d1)
+
+
+11. get():  
+===> It returns value of the given key.
+
+ex-1:  
+d = {101:'python',102:'c',103:'c++',104:'java'}
+print(d.get(102))
+print(d.get(103))
+print(d.get(101))
+print(d.get(104))
+print(d.get(105))
+
+         Note: if the given key is present, then it returns value.
+               if the given key is not present, then, it returns None.
+
+12. keys():
+    It returns only keys.
+
+ex-1: 
+d = {101:'python',102:'c',103:'c++',104:'java'}
+print(d.keys())
+ 
+
+ex-2:  
+d = {101:'python',102:'c',103:'c++',104:'java'}
+
+for i in d.keys():   
+    print(i)
+ 
+
+ 
+
+ 
+13. values():
+    It returns only values.
+
+ex-1:  
+d = {101:'python',102:'c',103:'c++',104:'java'}
+print(d.values())
+
+ 
+ex-2:  
+d = {101:'python',102:'c',103:'c++',104:'java'}
+
+for i in d.values():   
+    print(i)
+
+ 
+ 
+     
+14. items():
+    It returns  keys and values.
+ex-1:  
+d = {101:'python',102:'c',103:'c++',104:'java'}
+print(d.items())
+  
+
+
+ex-2:  
+d = {101:'python',102:'c',103:'c++',104:'java'}
+
+for i in d.items():     
+    print(i)
+
+ 
+ex-3:  
+d = {101:'python',102:'c',103:'c++',104:'java'}
+
+for i,j in d.items():    
+    print(i,j)
+
+
+ex-4:   
+d = {101:'python',102:'c',103:'c++',104:'java'}
+for i in d.items(): #(101,python),(102,c),(103,c++),(104,java)
+
+    for j in i:   
+        print(j,end=' ')
+
+    print()
+
+
+ex-5:   
+d = {101:'python',102:'c',103:'c++',104:'java'}
+for i in d.items(): #(101,python),(102,c),(103,c++),(104,java)
+    print(i[0],i[1])
+     
+
+ex-6: 
+d = {101:'python',102:'c',103:'c++',104:'java'}
+
+for i,j in d.items():    
+    print(i,':',j)
+
+
+
+ 
+ 
+write a program to get domain information using python module
+
+import whois
+domain = input('Enter domain name  :')
+domain_info = whois.whois(domain)
+
+for k,v in domain_info.items():
+    print(k,':',v)
+    
+
+ 
+
+       Note:
+
+
+if the given module is not present, then, to install
+
+             pip install whois 
+
+ 
+
+
+15. fromkeys():
+--------------------   
+====> To create a new dictionary from any iterable.
+It is used to create  a new dictionary.
+
+It constructs a dictionary from a sequence of keys and
+an optional default value for all those keys.
+
+
+===> syntax:
+            fromkeys(iterable,value=None)
+
+            
+ex-1:  
+names = ['joshitha','sravya','mohan','laxmi','vamsikrishna']
+d = dict.fromkeys(names)
+print(d)
+
+
+ex-2:  
+names = ['joshitha','sravya','mohan','laxmi','vamsikrishna']
+d = dict.fromkeys(names,'python')
+print(d)
