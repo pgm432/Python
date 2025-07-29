@@ -1,11 +1,12 @@
-    			    PYTHON TEST 
-Date: 23-07-2025                                                                                                         batch: 8am
+PYTHON TEST 
+Date: 23-07-2025                                                    
 ===============================
  1. Which of the following is the correct syntax for an if statement in Python?
 a) if condition then:
 b) if condition:
 c) if condition do:
 d) if: condition
+
 2. What will the following code print?
 x = 10
 if x > 5:
