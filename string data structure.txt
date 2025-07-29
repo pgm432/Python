@@ -1,0 +1,683 @@
+string handling
+                   (or)
+                   strings
+                    (or)
+                string data structure
+         -------------------------------------
+
+===> A single character or group of characters is called a string.
+====> The strings are enclosed by either
+     single quotes or double quotes (or)
+     triple single quotes or triple double quotes 
+
+    ex-1: 
+                     'good morning'
+
+                     "good morning"
+
+                     '''good morning'''
+
+                     """good morning"""
+ 
+
+  ex-2:
+          'python is a high level programming Language'
+          "python is a high level programming Language"
+          '''python is a high level programming Language'''
+          """python is a high level programming Language"""
+
+==> The strings are 2 types:
+             1. single line strings
+             2. multi-line strings
+
+1. single line strings:
+---------------------------
+    A string written in only one line.
+    It is called single line strings
+====> The single line strings are enclosed by either
+     single quotes or double quotes (or)
+     triple single quotes or triple double quotes 
+ 
+
+  ex-1:
+          'python is a high level programming Language'
+          "python is a high level programming Language"
+          '''python is a high level programming Language'''
+          """python is a high level programming Language"""    
+
+2. multi-line strings:
+--------------------------
+    A string written in morethan one line.
+    It is called multi-line strings
+
+
+====> The  multi-line strings are enclosed by either
+      triple single quotes or triple double quotes 
+ 
+
+  ex-1:
+          '''python
+          is a
+          high
+          level
+          programming
+          Language'''
+
+   ex-2:
+        """python is a
+           high level
+           programming
+           Language"""
+
+
+arithmetic operators in strings:
+-----------------------------------
+1. string concatenation operator(+)
+2. string repetition operator(*)
+
+1. string concatenation operator(+):
+---------------------------------------
+    This operator is used concatenation of two or more strings.
+ex-1:  
+s1 = 'tronix'
+s2 = 'hyderabad'
+s3 = s1+s2
+print(s3)
+
+
+ex-2:  
+s1 = 'tronix'
+s2 = 'hyderabad'
+s3 = s1+' '+s2
+print(s3)
+
+ex-3:  
+s1 = 'tronix'
+s2 = 45
+s3 = s1+s2
+print(s3)
+
+ex-4:  
+s1 = 'tronix'
+s2 = 3.2
+s3 = s1+s2
+print(s3)
+
+ex-5:  
+s1 = 'tronix'
+s2 = True
+s3 = s1+s2
+print(s3)
+
+ex-6:  
+s1 = 'tronix'
+s2 = 4+5j
+s3 = s1+s2
+print(s3)
+
+
+
+ex-7:  
+s1 = 'tronix'
+s2 = '45'
+s3 = s1+s2
+print(s3)
+
+
+ex-8:  
+s1 = 'tronix'
+s2 =  45
+print(s1+s2)
+
+ 
+2. string repetition operator(*)
+---------------------------------------
+    This operator is used repeat a string 'n' NO. of times 
+ex-1:   
+s1 = 'tronix'
+s2 = 'hyderabad'
+print(s1*5)
+print(s2*3)
+
+relational operators in strings:
+-----------------------------------
+                          <
+                          >
+                          <=
+                          >=
+                          ==
+                          !=
+
+ex-1:  
+s1 = 'hello'
+s2 = 'hello'
+print(s1==s2)
+
+ 
+ex-2:  
+s1 = 'hello'
+s2 = 'hello'
+s3 ='apple'
+s4 = 'banana'
+print(s1==s2)
+print(s1<s3)     
+print(s2<s4)    
+print(s3<s4)
+print(s2>s3)
+
+
+built-in functions (or) methods in strings:
+--------------------------------------------
+
+            1. len()
+            2. upper()
+            3. lower()
+            4. capitalize()
+            5. title()
+            6. swapcase()
+            7. isupper()
+            8. islower()
+            9. isalpha()
+            10. isalnum()
+            11. isdigit()
+            12. isspace()
+            13. istitle()
+            14. split()
+            15. join()
+            16. replace()
+            17. lstrip()
+            18. rstrip()
+            19. strip()
+            20. count()
+            21. index()
+            22. format()
+            23. f string function
+            
+
+
+s = 'hello'
+len(s)
+5
+s = 'tronix python'
+len(s)
+13
+s.upper()
+'TRONIX PYTHON'
+s = 'GOOD MORNING TO ALL'
+s.lower()
+'good morning to all'
+
+
+
+4. capitalize()
+-----------------
+===> This function is used to convert the first letter into capital
+     and remaining into small letters.
+    
+EX-1:
+
+
+s = 'good morning to all'
+print(s.capitalize()) 
+
+
+5. title():
+-----------------
+===> This function is used to convert, each and every word,
+     the first letter into capital
+     and remaining into small letters.
+    
+EX-1:   
+s = 'good morning to all'
+print(s.title()) 
+ 
+
+EX-2:   
+s = 'hyderabad is best town'
+print(s.capitalize())
+print(s.title()) 
+ 
+
+6. swapcase():  
+===> This function is used to convert,  
+     lower case letters into upper case
+     and upper case letters into lower case.
+    
+EX-1:   
+s = 'gooD morniNG to All'
+print(s.swapcase()) 
+ 
+ 
+ 
+
+7. isupper():
+==> It returns either  True / False
+==> In the given string all characters are upper case ,then,
+    it returns True. otherwise it returns False.
+ex-1:  
+s1 = 'hello'
+s2 = 'TRONIX'
+print(s1.isupper())
+print(s2.isupper())
+
+
+
+
+
+
+
+
+
+
+ 
+8. islower():
+==> It returns either  True / False
+==> In the given string all characters are lower case ,then,
+    it returns True. otherwise it returns False.
+ex-1:  
+s1 = 'hello'
+s2 = 'TRONIX'
+s3 = 'Good Morning TO ALL'
+print(s1.islower())
+print(s2.islower())
+print(s3.islower())
+
+
+
+
+
+ 
+9. isalpha():
+==> It returns either  True / False
+==> In the given string all characters are only alphabets,then,
+    it returns True. otherwise it returns False.
+ex-1:   
+s1 = 'hello'
+s2 = 'TRONIX'
+s3 = 'Good Morning TO ALL'
+s4 = '1234'
+s5 = 'python3.13.5'
+print(s1.isalpha())
+print(s2.isalpha())
+print(s3.isalpha())
+print(s4.isalpha())
+print(s5.isalpha())
+
+
+
+
+
+
+
+
+
+
+ 
+10. isalnum():
+===> alnum stands for either alphabets or numeric
+==> It returns either  True / False
+==> In the given string all characters are either alphabets or digits,
+    then,
+    It returns True. otherwise it returns False.
+    
+ex-1:   
+s1 = 'hello'
+s2 = 'TRONIX'
+s3 = 'Good Morning TO ALL'
+s4 = '1234'
+s5 = 'python3.13.5'
+print(s1.isalnum())
+print(s2.isalnum())
+print(s3.isalnum())
+print(s4.isalnum())
+print(s5.isalnum())
+
+
+
+
+
+ 
+11. isdigit():
+==> It returns either  True / False
+==> In the given string all characters are only digits,
+    then,
+    It returns True. otherwise it returns False.
+    
+ex-1:   
+s1 = 'hello'
+s2 = 'TRONIX'
+s3 = 'Good Morning TO ALL'
+s4 = '1234'
+s5 = 'python3.13.5'
+print(s1.isdigit())
+print(s2.isdigit())
+print(s3.isdigit())
+print(s4.isdigit())
+print(s5.isdigit())
+
+
+ 
+
+12. isspace()
+==> It returns either  True / False
+==> In the given string all characters are only spaces
+    then,
+    It returns True. otherwise it returns False.
+    
+ex-1:   
+s1 = 'hello'
+s2 = 'TRONIX'
+s3 = 'Good Morning TO ALL'
+s4 = '1234'
+s5 = 'python3.13.5'
+s6 = ''
+s7 = '    '
+s8 = '                         '
+
+print(s1.isspace())
+print(s2.isspace())
+print(s3.isspace())
+print(s4.isspace())
+print(s5.isspace())
+print(s6.isspace())
+print(s7.isspace())
+print(s8.isspace())
+
+built-in functions (or) methods in strings:
+--------------------------------------------       
+            14. split()
+            15. join()
+            16. replace()
+            17. lstrip()
+            18. rstrip()
+            19. strip()
+            20. count()
+            21. index()
+            22. format()
+            23. f string function
+             
+
+
+ 
+
+split():
+--------
+===> To divide the given string into sub strings.
+ 
+====> The result is list data type.
+===>
+
+            split('separator')
+
+          Here,
+             ===> By default, separator is blank space.
+ex-1:  
+s = 'python is a scripting programming Language'
+x = s.split()
+print(x)
+
+
+ex-2:  
+s = 'python is a scripting programming Language'
+x = s.split('i')
+print(x)
+
+
+ex-3: 
+s = 'python is a scripting programming Language'
+x = s.split('a')
+print(x)
+
+
+
+ex-4:  
+s = 'python is a scripting programming Language'
+x = s.split('p')
+print(x)
+
+ 
+
+join():
+-------
+==> To merge the different substrings into a string.
+==>
+
+           'separator'.join(iterator)
+
+ex-1:  To display date 
+t = ('29','07','2025')
+x =   '/'.join(t)
+print(x)
+
+
+ex-2:  To display date  
+t = ('03','07','2025')
+x =   '-'.join(t)
+print(x)
+
+
+
+ex-3:  To display time 
+t = ('07','21','08')
+x =   ':'.join(t)
+print(x)
+
+
+
+
+ex-4:  To display strings 
+t = ('python','is','a','scripting','Langauge')
+print(':'.join(t))
+print(' '.join(t))
+print('-'.join(t))
+print('&'.join(t))
+print('^'.join(t))
+print('#'.join(t))
+print('$'.join(t))
+print('@'.join(t))
+
+ 
+
+
+
+
+
+
+
+
+
+16. replace():
+----------------
+===> This function is used to replace old string into new string.
+==> syntax:
+                 replace('olstring','newstring',n)
+
+            Here,
+               n represents NO. of times.
+
+ex-1:  
+s = 'ababababababababababab'
+print(s.replace('b','a'))
+
+
+ex-2:  
+s = 'ababababababababababab'
+print(s.replace('b','a',3))
+
+
+ex-3:  
+s = 'python is a high level programming language'
+print(s.replace('python','java'))
+
+
+ 
+
+ 
+ 
+17. lstrip():
+    This function is used to remove left side blank spaces.
+
+ex-1:   
+s = '              hello              '
+print(len(s))
+print(len(s.lstrip()))
+
+ 
+    
+18. rstrip():
+    This function is used to remove right side blank spaces.
+
+ex-1:   
+s = '              hello              '
+print(len(s))
+print(len(s.rstrip()))
+
+
+ 
+19. strip():
+    This function is used to remove both sides blank spaces.
+
+
+ex-1:   
+s = '              hello              '
+print(len(s))
+print(len(s.strip()))
+
+  
+
+
+19. count():   
+
+s = 'python is a high level programming language'
+print(s.count('i'))
+print(s.count('t'))
+print(s.count('e'))
+print(s.count('python'))
+print(s.count('high'))
+print(s.count('a'))
+print(s.count('z'))
+print(s.count('b'))
+
+
+20.index(): 
+
+s = 'python is a high level programming language'
+print(s.index('i'))
+print(s.index('t'))
+print(s.index('e'))
+print(s.index('python'))
+print(s.index('high'))
+print(s.index('a'))
+print(s.index('z'))
+print(s.index('b'))
+
+ 
+
+write a program to generate the following output.
+
+      input:
+           a = 11
+           b = 25
+           c = 88
+
+      Expected output:
+          A value = 11, B value = 25, C value = 88  
+
+a = 11
+b = 25
+c = 88
+print('A value = ',a,', B value = ',b, ',C value =  ',c)
+
+
+
+
+
+
+
+
+
+
+format(): 
+==> formatting a given string
+ex-1: 
+a = 11
+b = 25
+c = 88
+print('A value = {}, B value = {},C value =  {}'.format(a,b,c))
+
+
+
+
+ 
+     Here,
+        {} is called replacement operator 
+
+ 
+ex-2:  
+eggs = 8
+cost = 6
+print('{} Eggs Total price = {}'.format(eggs,eggs*cost))
+
+
+ex-3:  
+a = 9
+b = 3
+print('Addition value = {}'.format(a+b))
+print('Subtraction value = {}'.format(a-b))
+print('Multiplication value = {}'.format(a*b))
+print('Division  value = {}'.format(a/b))
+print('Remainder value = {}'.format(a%b))
+
+
+ex-4:   
+a = 9
+b = 3
+print('{} + {} = {}'.format(a,b,a+b))
+print('{} - {} = {}'.format(a,b,a-b))
+print('{} * {} = {}'.format(a,b,a*b))
+print('{} / {} = {}'.format(a,b,a/b))
+print('{} % {} = {}'.format(a,b,a%b))
+
+
+
+f string:  
+==> formatting a given string
+ex-1:  
+a = 11
+b = 25
+c = 88
+print(f'A value = {a}, B value = {b},C value =  {c}')
+
+ 
+
+ex-2:   
+eggs = 8
+cost = 6
+print(f'{eggs} Eggs Total price = {eggs*cost}')
+
+ex-3:  
+a = 9
+b = 3
+print(f'Addition value = {a+b}')
+print(f'Subtraction value = {a-b}')
+print(f'Multiplication value = {a*b}')
+print(f'Division  value = {a/b}')
+print(f'Remainder value = {a%b}')
+
+
+
+
+ex-4:   
+a = 9
+b = 3
+print(f'{a} + {b} = {a+b}')
+print(f'{a} - {b} = {a-b}')
+print(f'{a} * {b} = {a*b}')
+print(f'{a} / {b} = {a/b}')
+print(f'{a} % {b} = {a%b}')
+
+
+ex-5:   
+a = 9
+b = 3
+print(f'{10} + {b} = {a+b}')
