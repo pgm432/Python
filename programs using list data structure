@@ -1,0 +1,211 @@
+programs using list data structure
+        -------------------------------------------
+
+1. write a program to create a empty list
+method-1:  
+x = [  ]
+print(x)
+print(type(x))
+
+
+
+method-2  
+x = list()
+print(x)
+print(type(x))
+
+
+
+2. To create a list with values  
+method-1: staic  
+x = [11,22,33,44,55,66]
+print(x)
+
+
+method-2: dynamic , using eval   
+x = eval(input('Enter your elements'))
+print(x)
+
+
+method-3: dynamic , using append()    
+List1 =  [   ]
+n = int(input('How many stored into a list'))
+for i in range(1,n+1,1):    
+    y = int(input('Enter your element'))
+    List1.append(y)
+
+
+ 
+print(List1)
+
+
+
+3. write a program to display the following output  
+            sample input:
+                List1 = [ 11,22,33,44,55,66]
+
+            output:
+                evenlist = [22,44,66]
+                oddlist  = [11,33,55]     
+
+
+List1 = [ 11,22,33,44,55,66]
+evenlist = [  ]
+oddlist = [  ]
+for i in List1:   
+    if i%2==0:
+        evenlist.append(i)
+    else:
+        oddlist.append(i)
+
+
+print(f'even List  =  {evenlist}')
+print(f'Odd List  =   {oddlist}')
+
+
+ 
+
+
+
+4. write a program to display the following output   
+            sample input:
+                List1 = [ 9,-4,-8,23,45,-22,-11]
+
+            output:
+                poslist = [9,23,45]
+                oddlist  = [-4,-8,-22,-11]    
+
+
+List1 = [ 9,-4,-8,23,45,-22,-11]
+poslist = [  ]
+neglist = [  ]
+for i in List1:   
+    if i>0:
+        poslist.append(i)
+    else:
+        neglist.append(i)
+
+
+print(f'Positive Numbers  List  =  {poslist}')
+print(f'Negative List  =   {neglist}')
+
+
+ 
+
+
+5. write a program to count No. of elements in a given list 
+method-1: using len() function 
+
+List1 =  [ 9,4,8,45,23]
+print(f'No. of Elements  =  {len(List1)}')
+
+
+method-2: without using len() function  
+
+List1 = [ 9,4,8,45,23]
+count = 0
+
+for i in List1: # 9   4   8   45   23
+    count=count+1
+    
+
+
+
+
+print(f'No. of Elements  =  {count}')
+
+ 
+
+
+6. write a program to find sum of list elements  
+method-1: using sum() function 
+
+List1 =  [ 9,4,8,45,23]
+print(f'sum  of List Elements  =  {sum(List1)}')
+
+ 
+method-2: without using sum() function    
+
+List1 = [ 9,4,8,45,23]
+s = 0
+
+for i in List1: # 9   4   8   45   23
+    s = s+i
+                             
+                                 
+
+
+print(f'sum  of List Elements  =  {s}')
+ 
+ 
+
+7. write a program to find lowest value in a given list
+8. write a program to find highest value in a given list  
+
+
+
+9. write a program to arrange list elements in reverse order   
+method-1: using reverse() function   
+List1 = [ 9,4,8,45,23]
+print(f'Original List  = {List1}')
+List1.reverse()
+print(f'Reverse List  = {List1}')
+
+
+method-2: using slicing  
+List1 = [ 9,4,8,45,23]
+print(f'Original List  = {List1}')
+ 
+print(f'Reverse List  = {List1[ : : -1]}')
+
+
+method-3: using slicing  
+List1 = [ 9,4,8,45,23]
+print(f'Original List  = {List1}')
+ 
+print(f'Reverse List  = {List1[ -1 : : -1]}')
+
+
+
+method-4: using for loop   
+List1 = [ 9,4,8,45,23]
+revlist =  [  ]
+for i in range(-1,-len(List1)-1,-1 ):   
+    revlist.append(List1[i]) 
+
+
+
+print(f'Original List  = {List1}') 
+print(f'Reverse List  = {revlist}')
+
+
+
+List Data Structure
+1. Write a Python program which accepts a sequence of comma-separated numbers from user and generate a list .
+2. Python program to print the elements of a list    
+3. Python program to print even numbers in a list
+ 4. Python program to print positive Numbers in a List
+5. Write a program to find the smallest and largest item in list6.  Write a  Python Program to Find the Largest Number in a List 
+7. The program takes a list and prints the second largest number in the list.
+8. Write a Python Program to Put Even and Odd elements in a List into Two Different Lists 
+9. Write a  Python Program to Merge Two Lists and Sort it 
+10. Write a Python Program to Sort the List According to the Second Element in Sublist
+11. write a prgram to swaping of  first and last elements in  a list
+12. Write a  Python Program to Generate Random Numbers from 1 to        			20 and Append Them to the List 
+13. Python Program to Find the Union of two Lists 
+14. write a program to print common elements in both the lists:
+15. Python Program to Read a List of Words and Return the Length of the Longest One 
+16. Write program  removing duplicated from list   using naive methods  
+17. Python Program to Remove the ith Occurrence of the Given Word in a List where Words can Repeat 
+18. write a program to print all indexnumbers of a given element
+19. Python Program to Perform List Arithmetic Operations
+20. write a program to find the sum of list elements
+21. Write a program to perform list operations 
+22. Python program for Bubble Sort
+23. Python program to print the duplicate elements in a list 
+24. Python program to print the elements of an list present on even position.
+25. To finds the average of a list of marks terminated by -1
+26. write a program to convert celsius to fahrenheit using lists.
+27. Desisn a program that allows a user to enter 20 numbers,
+then display all of the numbers , the largest number and the smallest.
+28. write a program to find duplicate numbers in a list.
