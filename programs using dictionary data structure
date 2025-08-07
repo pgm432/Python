@@ -1,0 +1,503 @@
+programs using dictionary data structure
+            -------------------------------------------
+1. To create  a empty dictionary
+method-1:  using curly braces 
+d = { }
+print(d)
+
+
+method-2:  using dict() built-in function   
+d =  dict() 
+print(d)
+
+
+2. To create a dictionary with keys and values , at static initialization   
+
+d = {101:'python',102:'c',103:'c++',104:'java'}
+print(d)
+     
+
+3. To create a dictionary with keys and values , at dynamic initialization   
+method-1:  using setdefault()    
+d = {   }
+print(d)
+k = int(input('Enter key:'))
+v = input('Enter value:')
+d.setdefault(k,v)
+print(d)
+     
+
+method-2:      
+d = {   }
+print(d)
+k = int(input('Enter key:'))
+v = input('Enter value:')
+d[k] = v
+print(d)
+     
+
+method-3:  morethan one key and value  , using for loop     
+d = {   }
+print(d)
+
+for i in range(1,6,1):   # 1 2 3 4 5
+    x = int(input('Enter key:'))
+    y = input('Enter value:')
+    d[x] = y     # (or)  d.setdefault(x,y)
+
+
+                        
+
+print(d)
+ 
+method-4:  morethan one key and value  , using while  loop     
+d = {   }
+print(d)
+
+while True:
+    x = int(input('Enter key:'))
+    y = input('Enter value:')
+    d[x] = y
+    ch = input('Do you want to continue or not(y/n)?')
+    if ch=='n':
+        break
+    else:
+        continue
+
+                     
+
+print(d)
+
+
+ 
+
+
+4. write a program to find the given key is present or not ?    
+d = {101:'python',102:'c',103:'c++',104:'java'} 
+
+x = int(input('Which key to be search:'))
+
+if x in d.keys():  
+    print('Given key is present')
+else:
+    print('Given key is not present')
+
+    
+    
+
+4. write a program to find the given key is present or not ?   
+d = {101:'python',102:'c',103:'c++',104:'java'} 
+
+x = input('Which value to be search:')
+
+if x in d.values(): #   python   c   c++   java
+    print('Given value is present')
+else:
+    print('Given value is not present')
+    
+ 
+
+5. write a program to generate the following output.
+    sample input:
+              s =  'good morning to all'
+
+    output:
+        d =  {'g':2,'o':3,'d':1,'m':1,'r':1,'n':2,'i':1,'t':1,'a':1,'l':2,' ':3}  
+        
+s =  'good morning to all'
+d = {  }
+
+for i in s:      
+    if i in d.keys():    
+        d[i]=d[i]+1
+    else:
+        d[i]=1
+
+print(d)
+ 
+
+6. write a program to generate the following output. only vowels  
+    sample input:
+              s =  'good morning to all'
+              d =  {'a':0,'e':0,'i':0,'o':0,'u':0}
+
+    output:
+        d =  {'a':1,'e':0,'i':1,'o':4,'u':0}     
+
+method-1:          
+s =  'good morning to all'
+d =  {'a':0,'e':0,'i':0,'o':0,'u':0}
+
+for i in s:      
+    if i=='a':    
+        d[i]=d[i]+1
+    if i=='e':    
+        d[i]=d[i]+1
+    if i=='i':    
+        d[i]=d[i]+1
+    if i=='o':    
+        d[i]=d[i]+1
+    if i=='u':    
+        d[i]=d[i]+1
+        
+print(d)
+
+ 
+
+
+method-2:         
+s =  'good morning to all'
+d =  {'a':0,'e':0,'i':0,'o':0,'u':0}
+
+for i in s:      
+    if i=='a' or i=='e' or i=='i' or i=='o' or i=='u':    
+        d[i]=d[i]+1
+
+
+
+Dictionary Data Structure
+1. Write a Python Program to Add a Key-Value Pair to the Dictionary
+key=int(input("Enter the key (int) to be added:"))
+value=input("Enter the value for the key to be added:")
+d={ }
+d.update({key:value})
+print("Updated dictionary is:")
+print(d)
+2. Write a python program to enter dictionary key,values from
+ the keyboard
+d={ }
+n=int(input("enter how many elements"))
+for i in range(0,n):
+	element=input("enter key and values separated by commas(,):")
+	key,value=element.split()
+	d[key]=value
+	#d.update({key:value})
+print(d)
+3. Write a Python Program to Concatenate Two Dictionaries Into One
+Method-1
+d1={'A':1,'B':2}
+d2={'C':3}
+d1.update(d2)
+print("Concatenated dictionary is:")
+print(d1)
+method-2:   Here,  ‘ |’   is called concatenation operator.
+              It was introduced in python 3.8 onwards
+d1={'A':1,'B':2}
+d2={'C':3}
+d3 = d1|d2
+print("Concatenated dictionary is:")
+print(d3)
+method-3:  
+
+d1 = {'A':1,'B':2}
+d2 = {'C':3,'D':4,'E':5,'F':6}
+d3 = {  }
+
+for i in d1.keys():
+    d3.setdefault(i,d1.get(i))
+    
+
+for i in d2.keys():
+    d3.setdefault(i,d2.get(i))
+
+print("Concatenated dictionary is:")
+print(d3)
+4. Write a Python Program to  check whether a   given key already exists in a dictionary or Not
+Method-1:
+method-1:   
+d = {101: 'python',102:'c',103:'cpp',104:'java',105:'Django',106:'React js'}
+k = int(input('Which key To be earch: '))
+found = False
+for i in d.keys():   
+    if i==k:
+        found=True
+        break
+
+
+if found:
+    print('Given key is present')
+else:
+    print('Given key is not present')
+Method-2:
+d={'A':1,'B':2,'C':3}
+key=input("Enter key to check:")
+if key in d.keys():
+      print("Key is present and value of the key is:")
+      print(d[key])
+else:
+      print("Key isn't present!")
+                     or
+#using function  
+ def checkKey(dict, key):       
+    if key in dict.keys(): 
+        print("Present, ", end =" ") 
+        print("value =", dict[key]) 
+    else: 
+        print("Not present")   
+ 
+dict = {'a': 100, 'b':200, 'c':300}   
+key = 'b'
+checkKey(dict, key)   
+key = 'w'
+checkKey(dict, key) 
+5. Python Program to Generate a Dictionary that Contains Numbers (between 1 and n) in the Form (x,x*x).
+n=int(input("Enter a number:"))
+d={x:x*x for x in range(1,n+1)}
+print(d)
+6. Write a Python Program to Sum All the Items in a Dictionary
+Method-1: 
+d={'A':100,'B':540,'C':239}
+print("Total sum of values in the dictionary:")
+print(sum(d.values()))
+
+
+
+method-2: using for loop
+d={'A':100,'B':540,'C':239}
+s = 0
+
+for i in d.values():     
+    s = s+i
+
+
+print("Total sum of values in the dictionary: " , s)
+
+7. Python Program to Multiply All the Items in a Dictionary
+d={'A':10,'B':10,'C':239}
+tot=1
+for i in d:    
+    tot=tot*d[i]
+print(tot)
+8. Python Program to Remove the Given Key from a Dictionary
+Method-1:  
+d = {'a':1,'b':2,'c':3,'d':4}
+print("Initial dictionary")
+print(d)
+key=raw_input("Enter the key to delete(a-d):")
+if key in d: 
+    del d[key]
+else:
+    print("Key not found!")
+    exit(0)
+print("Updated dictionary")
+print(d)
+
+method-2:
+d = {'a':1,'b':2,'c':3 ,'d':4,'e':5}
+
+x = input('Enter deleted key:')
+
+
+if x in d.keys():
+    d.pop(x)
+    print('After deletion , the dictionary  = ',d)
+else:
+    print('Given key is not present')
+9. Python Program to Create a Dictionary with Key as First Character and Value as Words Starting with that Character
+test_string=input("Enter string:")
+l=test_string.split()
+d={}
+for word in l:
+    if(word[0] not in d.keys()):
+        d[word[0]]=[]
+        d[word[0]].append(word)
+    else:
+        if(word not in d[word[0]]):
+          d[word[0]].append(word)
+for k,v in d.items():
+        print(k,":",v)
+10. Write a program merging of two dictionaries
+def Merge(dict1, dict2): 
+    return(dict2.update(dict1))        
+dict1 = {'a': 10, 'b': 8} 
+dict2 = {'d': 6, 'c': 4} 
+ print(Merge(dict1, dict2)) 
+  # changes made in dict2 
+print(dict2) 
+
+def Merge(dict1, dict2): 
+    res = {**dict1, **dict2} 
+    return res 
+      
+# Driver code 
+dict1 = {'a': 10, 'b': 8} 
+dict2 = {'d': 6, 'c': 4} 
+dict3 = Merge(dict1, dict2) 
+print(dict3) 
+11. Python Program to Remove Given Key from a Dictionary
+myDict = {'name': 'John', 'age': 25, 'job': 'Developer'}
+print("Dictionary Items  :  ",  myDict)
+key = input("Please enter the key that you want to Delete : ")
+if key in myDict:
+    del myDict[key]
+else:
+    print("Given Key is Not in this Dictionary")    
+print("\nUpdated Dictionary = ", myDict) 
+12. Python Program to find Sum of Items in a Dictionary
+myDict = {'x': 250, 'y':500, 'z':410}
+print("Dictionary: ", myDict)
+total = 0
+# Print Values using get
+for i in myDict:
+    total = total + myDict[i]    
+print("\nThe Total Sum of Values : ", total)
+13. Write a Python script Sort given list of dictionaries by date
+ ini_list = [{'name':'akash', 'd.o.b':'1997-03-02'}, 
+            {'name':'manjeet', 'd.o.b':'1997-01-04'},  
+            {'name':'nikhil', 'd.o.b':'1997-09-13'}]                   
+# printing initial list 
+print ("initial list : ", str(ini_list))   
+# code to sort list on date 
+ini_list.sort(key = lambda x:x['d.o.b']) 
+  # printing final list 
+print ("result", str(ini_list)) 
+14. Write a program in python to find out the frequency of each element in a list using a dictionary.
+list=[11,22,33,22,33,33,11,44]
+d={}
+for i in list:
+    d[i]=0
+for i in list:
+    if i in d:
+        d[i]=d.get(i)+1
+print(d)
+15. Write a program to find the no. of a,e,i,o,u's  in a string. using dictionary.
+d={'a':0,'e':0,'i':0,'o':0,'u':0}
+str=input('enter any string')
+for i in str:
+    if i=='a':
+        d['a']=d.get('a')+1
+    elif i=='e':
+        d['e']=d.get('e')+1
+    elif i=='i':
+        d['i']=d.get('i')+1
+    elif i=='o':
+        d['o']=d.get('o')+1
+    elif i=='u':
+        d['u']=d.get('u')+1        
+print('no. of a =',d.get('a'))           
+print('no. of e =',d.get('e'))          
+print('no. of i =',d.get('i'))          
+print('no. of o =',d.get('o'))          
+print('no. of u =',d.get('u'))
+print('total no. of vowels = ',d.get('a')+d.get('e')+d.get('i')+
+                               d.get('o')+d.get('u'))
+print(d)
+16. Write a program to develop birthday app
+dict={ }
+while True:
+    print(". ....birthday App....")
+    print("1. show birthday   ")
+    print("2. Add to birthday List   ")
+    print("3. Exit   ")
+    choice=int(input("enter your choice"))
+    if choice==1:
+        if len(dict.keys())==0: 
+               print("nothing to show")
+        else:
+               name=input("enter name to look for birthday")
+               birthday=dict.get(name,"No data found")
+               print(birthday)
+    elif choice==2:
+        name=input("enter friend name")
+        date=input("enter birthdate")
+        dict[name]=date 
+        print("Birthday Added")
+    elif choice==3:
+        break
+    else:
+        print("choice a valid option")
+print(dict)
+   
+17.  write a program to display only keys  
+method-1: 
+d = {101:'ram',102:'sita',103:'venkat',104:'siva'}
+print(d.keys())
+method-2:  
+d = {101:'ram',102:'sita',103:'venkat',104:'siva'}
+for i in d.keys():    #101  102  103  104
+    print(i)    
+ 
+18 write a program to display only values   
+method-1: 
+d = {101:'ram',102:'sita',103:'venkat',104:'siva'}
+print(d.values())
+method-2:  
+d = {101:'ram',102:'sita',103:'venkat',104:'siva'}
+
+for i in d.values():   
+    print(i)
+    
+
+19. write a program to display keys and values     
+method-1: 
+d = {101:'ram',102:'sita',103:'venkat',104:'siva'}
+print(d.items())
+method-2:  
+d = {101:'ram',102:'sita',103:'venkat',104:'siva'}
+for i in d.items():   
+    print(i)
+method-3:   
+d = {101:'ram',102:'sita',103:'venkat',104:'siva'}
+for i,j in d.items():   
+    print(i , j ) 
+
+pipe symbole(|): is used concatenation of two dictionaries 
+
+20. write  a program merging of two dictionaries  
+method-1: using pipe symbol 
+d1 = {   }
+d2 = {   }      
+d3 = d1|d2
+print(d3)  
+method-2: using pipe symbol  
+d1 = {101:'ram',102:'sita'   }
+d2 = {103:'laxman',104:'venkat',105:'siva'  }
+d3 = d1|d2
+print(d3)
+method-3: using  update() function    
+d1 = {101:'ram',102:'sita'   }
+d2 = {103:'laxman',104:'venkat',105:'siva'  }
+d1.update(d2)
+print(d1) 
+method-4: To develop the Logic    
+d1 = {101:'ram',102:'sita'   }
+d2 = {103:'laxman',104:'venkat',105:'siva'  }
+d3 = {  }
+for i,j in d1.items():    
+    d3.setdefault(i,j)
+
+for i,j in d2.items():
+    d3.setdefault(i,j) 
+print(d3)
+
+
+21. write a program, In dictionary data structure, example program Using All Methods
+ student = {'name': 'John', 'marks': 85}
+# Access keys, values, items
+print(student.keys())
+print(student.values())
+print(student.items())
+# get with default
+print(student.get('age', 'Not Available'))
+
+# setdefault
+student.setdefault('age', 20)
+
+# update
+student.update({'course': 'Math', 'marks': 90})
+
+# pop
+student.pop('course')
+
+# popitem
+student.popitem()
+
+# copy
+student_copy = student.copy()
+
+# clear
+student.clear()
+
+print("Final Student:", student)
+print("Student Copy:", student_copy)
+print(d)
