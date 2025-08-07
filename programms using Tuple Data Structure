@@ -1,0 +1,132 @@
+Tuple Data Structure
+        -----------------------------
+ 
+ 
+1. Write a Python program which accepts a sequence of comma-separated numbers,
+   from user and generate a list and a tuple with those numbers.  
+
+x = input('Input some comma separated numbers : ')
+y = x.split(',')
+print(y)
+z = tuple(y)
+print(z)
+  
+
+
+
+       
+2. Python code to demonstrate  to remove the tuples  if certain criteria met 
+ 
+a = [('b', 100), ('c', 200), ('x', 45),   ('d', 876), ('e', 75)] 
+  
+print("Original  List", a) 
+  
+result = [  ]
+
+for i in a:   
+    if i[1] <= 100: 
+        result.append(i)
+
+
+print ("Resultant tuple list: ", result) 
+
+ 
+             
+
+
+
+
+
+
+
+
+ 
+3. write a python code to find  min and max in list of tuples
+   using min( ) and max( )     
+
+a = [(2, 3), (4, 7), (8, 11), (3, 6)]
+
+print ("The original list is : " , a)
+
+res1 = min(a)[0], max(a)[0]
+
+res2 = min(a)[1], max(a)[1]
+
+print("The min and max of index 1 :  " +  str(res1)) 
+print("The min and max of index 2 :  " +  str(res2)) 
+
+
+
+
+
+
+
+
+ 
+4. Write a program to find the given element is present or not  in a tuple  
+t = (11,22,33,44)
+s = int(input('Which element to be search'))  
+if s in t:     
+    print('Given element is present in a tuple')
+else:
+    print('Given elemnt is not present in a tuple')
+
+  
+5. Write a program to find the position of a given element in a tuple  
+x = 11,22,33,44,55,66,77,88,99
+
+e=int(input('enter the element:'))
+
+print('position =',x.index(e)+1)
+
+
+write a  program swapping of any two numbers   
+method-1: using temporary variable   
+a = 7
+b = 3
+print('Before swapping :')
+print('a value  =  ',a)
+print('b value  =  ',b)
+
+temp = a
+a = b
+b = temp
+
+
+print('After swapping :')
+print('a value  =  ',a)
+print('b value  =  ',b)
+
+ 
+
+
+method-2: without using temporary variable  
+a = 7
+b = 3
+print('Before swapping :')
+print('a value  =  ',a)
+print('b value  =  ',b)
+
+a = a+b
+b = a-b
+a = a-b
+
+
+
+print('After swapping :')
+print('a value  =  ',a)
+print('b value  =  ',b)
+
+
+method-3: single Line Logic   
+a = 7
+b = 3
+print('Before swapping :')
+print('a value  =  ',a)
+print('b value  =  ',b)
+
+a,b = b,a
+
+print('After swapping :')
+print('a value  =  ',a)
+print('b value  =  ',b)
