@@ -1,0 +1,146 @@
+programs using  strings
+               
+
+1. write a program to read a string and print it  
+s = input('Enter any string')
+print(s)
+
+
+
+2. write a program to find No. of characters in a given string.
+
+method-1: using len() function  
+s = input('Enter any string')
+print(f'No. of characters  =  {len(s)}')
+
+
+method-2: without using len() function  
+s = input('Enter any string')   
+count = 0
+for i in s:   
+    count+=1    
+
+
+
+print(f'No. of characters  =  {count}')
+
+
+
+ 
+ 
+2. write a program to find No. of vowels in a given string.
+METHOD-1:  
+s = input('Enter any string')
+vcount = 0
+
+for i in s:  
+    if i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or \
+       i=='A' or i=='E' or i=='I' or i=='O' or i=='U':
+        vcount+=1
+        
+
+print(f'No. of characters  =  {vcount}')
+
+
+
+
+METHOD-2:  
+s = input('Enter any string')
+vlist = ['a','e','i','o','u','A','E','I','O','U'  ]
+vcount = 0
+
+for i in s:  
+    if i in vlist:
+        vcount+=1
+        
+
+print(f'No. of characters  =  {vcount}')
+
+
+
+
+
+
+
+
+3. write a program to find No. of alphabets , NO. of digits and No. of spaces
+      and No. of special symbols . 
+
+           sample input: tronix234@gmail.com
+
+           Expected output:
+              No. of alphabets   ===> 14
+              NO. of digits       ===>  3
+              No. of spaces       ===>  0
+             No. of special symbols  ==> 2     
+           
+
+s = 'tronix234@gmail.com'
+acount = 0
+dcount = 0
+scount = 0
+splcount = 0
+for i in s:     
+    if i.isalpha():
+        acount+=1
+    elif i.isdigit():
+        dcount+=1
+    elif i.isspace():
+        scount+=1
+    else:
+        splcount+=1
+
+print(f'No. of characters = {acount}')
+print(f'No. of digits = {dcount}')
+print(f'No. of spaces = {scount}')
+print(f'No. of special symbols = {splcount}')
+
+
+ 
+
+
+4. write a program to display  reverse string   
+method-1:  
+
+s = 'hello'
+print(f'Original String =  {s}')
+print(f'Reverse String =  {s[::-1]}')
+
+
+method-2:  
+
+s = 'hello'
+print(f'Original String =  {s}')
+print(f'Reverse String =  {s[0 : :-1]}')
+
+          
+method-3:  using for loop 
+
+s = input('Enter any string')
+revstr = ''
+
+for i in s:
+    revstr = i+revstr
+           
+
+print(f'Original String =  {s}')
+print(f'Reverse String =  {revstr}')
+
+ 
+
+
+
+
+5. write a program to find the given string is palindrom or not?  
+s = input('Enter any string')
+revstr = ''
+for i in s:
+    revstr = i+revstr           
+
+print(f'Original String =  {s}')
+print(f'Reverse String =  {revstr}')
+
+if s==revstr:
+    print('Given string is palindrom string')
+else:
+    print('Given string is not a palindrom string')
