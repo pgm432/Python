@@ -1,0 +1,292 @@
+FUNCTIONS
+                --------------------
+
+what is function:
+===> A group of statements are together into a single unit.
+     That unit is called a function.
+
+==> The functions are also called methods (or) subroutines (or) subprograms
+    (or) procedures.
+
+==> The main advantages of functions are
+                  a). code reusability
+                  b). code readability
+                  
+
+ex-1:  birthday function
+
+               main program                     Guru mohan birthday function
+
+                5:00
+                6:00
+                7:00
+                8:00
+                9:00                     gift
+                10:00
+                11:00
+                12:00
+                1:00
+                2:00
+                3:00
+                4:00
+                5:00                   
+                6:00                      return gift
+                7:00
+                8:00  dinner
+                9::00 sleep
+
+  
+ ex-2: 
+
+
+     11th day function     
+
+ ex-3:
+     
+     freshers day function
+
+ ex-4:
+     
+     farewell function
+     
+  ex-5:   hotel function 
+
+   main program                                            hotel
+
+                5:00
+                6:00                Rs. 100
+                7:00
+                8:00
+                9:00                     
+                10:00
+                11:00
+                12:00              return
+                1:00
+                2:00               2 plates dosa
+                3:00
+                4:00
+                5:00                   
+                6:00                       
+                7:00
+                8:00
+                9::00 sleep
+
+  
+
+ 
+
+
+                
+===> python supports 2 types of functions . These are:
+                 1. built-in functions
+                 2. user-defined functions
+                          a).  normal functions
+                          b).  recursive functions
+                          c).  lambda functions
+
+
+            
+
+1. Built-in functions:
+----------------------
+===> The functions which are coming from along with python software.
+     These functions are called built-in functions.
+     
+         EX:
+             print(),input(),type(),id(),range(),
+             len(),sum(),min(),max(),
+             int(),float(),str(),complex(),bool(),
+             list(),tuple(),set(),dict(),
+             append(),insert(),extend(),pop(),remove(),clear(),
+             copy(),reverse(),sort(),count(),index(),
+             add(),update(),discard(),remove(),
+             setdefault(),pop(),popitem(),keys(),values(),items(),get(),fromkeys(),
+             lower(),upper(),title(),capitalize(),swapcase(),
+             islower(),isupper(),istitle(),
+             isdigit(),isspace(),isalpha(),isalnum(),
+             split(),join(),replace(),
+             lstrip(),rstrip(),strip(),format() ,......etc.
+             
+
+
+
+               
+2. user-defined functions:
+----------------------
+===> The functions which are developed by programmer.
+     These functions are called user-defined  functions.
+ 
+===> syntax:
+      def functionname(argumentslist):
+          st-1
+          st-2
+          st-3
+          st-4
+          --
+          --
+          st-n
+          return expression
+
+
+ 
+    Here,
+      ===> def means function definition (or) function declaration.
+      ===> functionname reprsents name of the function.
+      ===> argumentslist represents list of formal arguments
+      ===> ':' indicates begining of the function
+      ===> st-1,st-2,st-3,st-4,.... st-n are called body of the function
+      ===> return expression,
+           It is used to return values from function to main program.
+           it is optional.
+           It returns no value / one value/ morethan one value.
+
+
+
+ex-1: To create empty function   
+def message():
+    pass
+         
+
+
+
+message()
+
+
+ex-2: write a program, to create function   
+def message():
+    print('welcome to Tronix Technologies')
+
+
+         
+message()
+
+
+
+ex-3: write a   function  to find the square of a given number  
+ 
+def square(x):              
+    y = x*x
+    return y
+     
+          
+       
+n = int(input('Enter any number'))  
+s = square(n)
+print(f'Square value  = {s}')
+
+  
+
+ex-4: write a   function  to find the cube of a given number  
+ 
+def cube(x):              
+    y = x**3
+    return y
+     
+          
+       
+n = int(input('Enter any number'))  
+c = cube(n)
+print(f'Cube value  = {c}')
+
+
+
+ex-5: write a function to find the addition of two numbers   
+
+def addition(x,y):
+    z=x+y  
+    return z
+     
+
+
+a = int(input('Enter first number'))
+b = int(input('Enter second number'))
+c = addition(a,b)
+print(f'Addition value  =  {c}')
+
+   
+
+ex-6: write a function to find the biggest of two numbers    
+
+def biggest(x,y):  
+    if x>y:   
+        return 'First number is biggest'
+    else:
+        return 'Second number is biggest'
+     
+
+
+
+a = int(input('Enter first number'))
+b = int(input('Enter second number'))
+k = biggest(a,b)
+print(k)
+
+
+    
+ex-7: write a function to find the area of a rectangle
+ex-8: write a function to find the area of a circle   
+
+ex-9: To develop multiple functions  
+
+
+def morning():
+    print('Good Morning To All')
+
+def afternoon():
+    print('Good Afternoon To All')
+    
+def evening():
+    print('Good Evening To All')
+    
+def night():
+    print('Good Night To All')
+ 
+
+morning()
+afternoon()
+evening()
+night()
+  
+ex-10: To develop multiple functions,
+       To perform arithmetic operations 
+
+
+def add(x,y):
+    print(x+y)        
+
+def sub(x,y):
+    print(x-y)  
+    
+def mul(x,y):
+    print(x*y)  
+    
+def div(x,y):
+    print(x/y)  
+ 
+
+n1 = int(input('Enter first number'))
+n2 = int(input('Enter second number'))
+add(n1,n2)
+sub(n1,n2)
+mul(n1,n2)
+div(n1,n2)
+
+  
+
+ex-10:  
+
+def add(x,y):
+    print(x+y)        
+ 
+ 
+add(10,3) 
+add(8,2)
+add(11,22)
+add(10,20)
+add(45,66) 
+
+
+
+  Note: A function write only once .
+        and call many times.
+        i.e. code reusabilty
