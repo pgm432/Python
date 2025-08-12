@@ -1,0 +1,201 @@
+ser-defined function declaration syntax:
+-----------------------------------------
+    def functionname(argumentslist):
+        st-1
+        st-2
+        st-3
+        ---
+        ---
+        st-n
+        return expression
+
+return statement:
+-------------------
+==> It is a keyword.
+==> this keyword is used to return values
+    from function to main program.
+==> it is used to return no value / one value /
+    morethan one value.
+
+ex-1: write a function to return no value   
+
+def message():
+    print('Good Morning to all')
+    print('welcome to tronix technologies')
+    print('welcom to python course')
+    return
+    print('welcome to hyderabad')
+    pritn('welcom to USA')
+
+
+message()
+
+ex-2: write a function to return only one value    
+
+def addition(x,y):
+    z = x+y
+    return z
+     
+
+
+c = addition(11,22)
+print(c)
+
+
+
+ex-3: write a function to return only one value      
+
+def display():
+    return 42    
+
+
+result =  display()
+print(result)
+
+
+ex-4: write a function to return only one value     
+
+def display():
+    return 'Good Morning To All' 
+
+
+result =  display()
+print(result)
+ 
+
+
+ex-5: write a function to return multiple values,
+      To perform arithmetic operations
+method-1:  
+def find(x,y):
+    m = x+y
+    n = x-y
+    p = x*y
+    q = x/y
+    return m,n,p,q 
+
+
+a,b,c,d = find(11,6)
+print(a)
+print(b)
+print(c)
+print(d)
+ 
+
+method-2:   
+def find(x,y):    
+    return x+y,x-y,x*y,x/y
+
+
+a,b,c,d = find(11,6)
+print(a)
+print(b)
+print(c)
+print(d)
+
+
+method-3:    
+def find(x,y):    
+    return  x+y,x-y,x*y,x/y
+
+
+
+a = find(11,6)
+print(a)
+print(type(a))
+
+
+ex-6: write a function, to return multiple values, using list data structure  
+
+def calculate(a):
+    return len(a),max(a),min(a),sum(a) 
+             
+
+x = calculate([11,6,35,3,9])
+print(x)
+
+
+
+ex-7: write a function, to return multiple values, using string data structure  
+
+def stringoperations(a):
+    return len(a),a.capitalize(),a.title(),a.upper()
+             
+
+x = stringoperations('hyderbad is best town')
+print(x)
+
+
+ex-8: To return multiple values 
+def display():
+    t = 11,22,33,44,55
+    return t
+
+
+x = display()
+print(x)
+
+
+ex-9: To return multiple values  
+def display():
+    d = {'htno':[101,102,103,104,105],'sname':['ram','siva','venkat','sita','laxman'] }
+    return d['sname']
+
+
+x = display()
+print(x)
+
+Types of user-defined functions:
+--------------------------------
+    1. functions with arguments and with return value
+    2. functions with arguments and no return value
+    3. functions no arguments with return value
+    4. functions no arguments and no return value
+
+1. functions with arguments and with return value
+------------------------------------------------
+
+             ex-1:
+                 range(1,6,1)  ==> 1,2,3,4,5
+                 type(22)      ==> int
+
+
+2. functions with arguments and no return value:
+------------------------------------------------
+
+             ex-1:
+                 range(1,1,1)  ==> no return value
+                  
+
+3. functions no arguments with return value:
+------------------------------------------------
+
+             ex-1:
+                 range()  ==>   TypeError 
+                 type()   ==>   TypeError 
+                 id()     ==>   TypeError 
+ 
+ 
+4. functions no arguments and no return value
+------------------------------------------------
+
+             ex:
+                 print()  ==> no return value
+                 
+Function Aliasing:
+-------------------
+
+ex-1:  
+def display():
+    print('I am function ')
+
+
+display()
+hello = display
+hello()
+
+x = display
+x()
+
+y = display
+y()
