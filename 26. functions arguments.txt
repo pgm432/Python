@@ -1,0 +1,178 @@
+what is argument(parameter)? types of arguments?
+----------------------------------------------------
+==> arguments represents input to the function.
+==> python supports 2 types of arguments. These are:
+                1. actual arguments
+                2. formal arguments
+
+
+1. actual arguments:
+-------------------------
+    The arguments which are used in function calling.
+    These arguments are called actual arguments (or) actual parameters.
+    
+2. formal arguments
+-------------------------
+    The arguments which are used in function declataion
+    These arguments are called formal  arguments (or) formal  parameters.
+
+ex-1:       
+def calculate(x,y):     
+    return x+y           
+
+a = 11
+b = 77
+c = calculate(a,b)               
+print(c)
+ 
+
+                      Here,
+                      a,b are called actual arguments
+                      x,y are called formal arguments
+                      
+
+ex-2:      
+def employeeinformation(x,y,z):     
+    print(x)
+    print(y)
+    print(z)
+
+
+
+empid = 1901
+empname = 'ram'
+empsal = 95000 
+employeeinformation(empid,empname,empsal)              
+
+
+         Here,
+                 a,b are called actual arguments
+                 x,y,z are called formal arguments
+
+
+ex-3:        
+def studentinformation(x,y,m,n,k):     
+    print(x)
+    print(y)
+    print(m)
+    print(n)
+    print(k)
+    total = m+n+k
+    average = total/3
+    return total,average
+
+
+htno = 12345
+studname = 'vamshi krishna'
+m1=77
+m2=88
+m3=99
+t , a = studentinformation(htno,studname,m1,m2,m3)              
+print(f'Total Marks =  {t}')
+print(f'Average marks = {a}')
+
+
+ 
+
+NOTE:
+
+
+htno,studname,m1,m2,m3 are called actual arguments.
+x,y,m,n,k are called formal arguments
+
+ 
+
+
+===> Again , these actual arguments and formal ar divided into 5 types:
+              1. positional arguments
+              2. keyword arguments
+              3. default arguments
+              4. variable length arguments
+              5. keyword-variable length arguments
+              
+1. positional arguments:
+--------------------------
+a). The No. of actual arguments and the nO. of  formal arguments
+    must be equal. otherwise it returns Error
+
+b). The position also important
+ex-1:  
+
+def studentinformation(x,y,m,n,k):     
+    print(x)
+    print(y)
+    print(m)
+    print(n)
+    print(k)
+    total = m+n+k
+    average = total/3
+    return total,average
+
+
+htno = 12345
+studname = 'vamshi krishna'
+m1=77
+m2=88
+m3=99
+t , a = studentinformation(htno,studname,m1,m2,m3)              
+print(f'Total Marks =  {t}')
+print(f'Average marks = {a}')
+
+
+2. keyword arguments:            
+--------------------------
+a). The No. of actual arguments and the nO. of  formal arguments
+    must be equal. otherwise it returns Error
+
+b). The position is not important
+c). In function calling, we can assign a value with formal argument
+ex-1:   
+
+def studentinformation(m,y,x,k,n):     
+    print(x,y,m,n,k)
+    total = m+n+k
+    average = total/3
+    return total,average
+
+
+htno = 12345
+studname = 'vamshi krishna'
+m1=77
+m2=88
+m3=99
+t , a = studentinformation(k=m3,m=m1,x=htno,y=studname,n=m2)              
+print(f'Total Marks =  {t}')
+print(f'Average marks = {a}')
+
+
+3. default arguments:
+-------------------------
+--------------------------
+a). The No. of actual arguments and the nO. of  formal arguments
+    may or may not be equal 
+b). The position is not important
+c). In function definition, we can assign a value with formal argument
+d). if we are not providing any value, then,
+    automatically assign a default value.
+ex-1:  
+def multiplication(x=10,y=20):
+    print(x*y)
+
+
+multiplication()
+multiplication(4)
+multiplication(2,3)
+multiplication()
+multiplication(25)
+
+
+  
+ex-2:  
+def countryinfo(name='INDIA'):
+    print(f'My current country is : {name}')
+
+
+countryinfo()
+countryinfo('USA')
+countryinfo()
+countryinfo('CHINA')
