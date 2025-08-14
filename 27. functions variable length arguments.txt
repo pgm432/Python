@@ -1,0 +1,210 @@
+4. variable length arguments:
+-----------------------------
+==> we can pass any No. of arguments based on our requirement.
+==> The No. of arguments are different from function call to function call
+==> syntax:
+                   def functionname(*args):
+                       body of the function
+
+            Here,
+               **args represents tuple data type.
+
+ex-1: using built-in function
+             print(a)   ===> only one argument
+             print(a,b) ===> Two arguments
+             print(a,b,c,d)  ===> Four arguments
+             print('ram','siva','laxman') ===> Three argument
+
+             
+ 
+ex-2: using user-defined function  
+
+
+def display(*x):
+    print(x)
+    print(type(x))
+
+
+
+display(11,22,33)
+display(1901,'ram',77,88,99)
+display(1902,'siva',99000.50,'ram@gmail.com')
+
+
+    Note:
+           *formalarguments receives any No. of arguments from function call
+           the formal argument is tuple data type
+
+            
+
+
+
+ex-3:  
+def maximum(*args):
+    print(max(args))
+    
+
+
+
+maximum(45,57,2,3,6)
+maximum(11,22,33,44,55,66,77,88,99)
+maximum(56,9,2,4,5,55,125,77,56,55,22,33,44,55,66)
+maximum(1,2,3)
+maximum(6,1)
+
+
+
+ex-4:   
+def maximum(x,*args):
+    print(x)
+    print(args)
+    print('-'*30)
+    
+
+
+
+maximum(45,57,2,3,6)
+maximum(11,22,33,44,55,66,77,88,99)
+maximum(56,9,2,4,5,55,125,77,56,55,22,33,44,55,66)
+maximum(1,2,3)
+maximum(6,1)
+
+
+5. keyword-variable length arguments:  
+------------------------------------
+===> we can pass any NO. of arguments with keys and values.
+==> The No. of arguments are different from function call to function call
+==> syntax:
+                   def functionname(**args):
+                       body of the function
+
+            Here,
+               **args represents dictionary data type.
+
+ex-1:  
+def display(**m):
+    print(m)
+
+
+display(z='ram@gmail.com',x=1901,y='ram')
+display(m3=99,htno=1901,m1=77,m2=88,studname='ram') 
+
+
+ 
+
+write a function demo for  positional arguments,keyword,default,variable length,
+keyword-variable length arguments.     
+method-1: using positional arguments 
+
+def addition(x,y,z):
+    print(x+y+z)
+
+addition(11,22,33)
+
+
+method-2: using keyword arguments  
+
+def addition(x,y,z):
+    print(x+y+z)
+
+addition(x=11,y=22,z=33)
+
+
+method-3: using default arguments 
+
+def addition(x=11,y=22,z=33):
+    print(x+y+z)
+
+addition()
+
+
+method-4: using variable arguments '
+
+def addition(*x):
+    print(sum(x))
+
+addition(11,22,33)
+
+
+
+method-5: using variable arguments 
+
+def addition(**x):
+    print(sum(x.values()))
+
+addition(x=11,y=22,z=33)
+
+ 
+
+
+write a function , Variable-Length Arguments (*args)
+
+Note: *args lets you pass any number of positional arguments into a function.  
+
+ 
+def sum_numbers(*args):
+    total = 0
+    for num in args:
+        total += num
+    return total
+
+print(sum_numbers(1, 2, 3))            # Output: 6
+print(sum_numbers(10, 20, 30, 40))     # Output: 100
+
+
+ 
+
+write a function Keyword Variable-Length Arguments (**kwargs)
+
+Note: **kwargs lets you pass any number of keyword arguments (key-value pairs).
+
+# Example 2: Displaying user information
+def display_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+display_info(name="Srinivas", age=30, city="Hyderabad")
+
+
+Output:
+
+name: Srinivas
+age: 30
+city: Hyderabad
+
+
+ 
+
+3. Combining *args and **kwargs
+
+You can use both together — *args must come before **kwargs.
+
+# Example 3: Order summary
+def order_summary(*items, **details):
+    print("Items Ordered:", items)
+    print("Order Details:", details)
+
+order_summary("Pizza", "Burger", order_id=101, status="Delivered", payment="UPI")
+
+
+Output:
+
+Items Ordered: ('Pizza', 'Burger')
+Order Details: {'order_id': 101, 'status': 'Delivered', 'payment': 'UPI'}
+
+4. Real-World Style Example   
+   write  a function that calculates the bill for a restaurant order:  '''
+
+def calculate_bill(*prices, **charges):
+    total_price = sum(prices)
+    extra_charges = sum(charges.values())
+    return total_price + extra_charges
+
+# prices = 200 (Pizza), 150 (Burger), 100 (Pasta)
+# charges = tax=50, tip=30
+print("Total Bill:", calculate_bill(200, 150, 100, tax=50, tip=30))
+
+
+Output:
+
+Total Bill: 530
