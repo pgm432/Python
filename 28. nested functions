@@ -1,0 +1,91 @@
+nested functions:
+---------------------
+====> A Function inside another Function.
+      It is called nested nested function
+
+====> syntax:
+              def outerfunctionname(argumentslist):
+                  def innerfunctionname-1(argumentslist):
+                      body of the function
+                  def innerfunctionname-2(argumentslist):
+                      body of the function
+                  def innerfunctionname-3(argumentslist):
+                      body of the function
+                  ---
+                  ---
+                  def innerfunctionname-n(argumentslist):
+                      body of the function
+
+ex-1:  write a program demo for nested functions, to display messages
+def message():
+    def mng():
+        print('Good morning to all')                            
+    def aft():
+        print('Good afternoon to all')
+    def evg():
+        print('Good evening to all')                 
+    def ngt():
+        print('Good night to all')
+
+    mng()
+    aft()
+    evg()
+    ngt()
+ 
+ 
+
+message()   
+
+
+
+
+ex-2:  write a program demo for nested functions, to perform arithmetic operations  
+method-1:  
+def arithmeticoperations():
+    def addition(x,y):
+        print(x+y)                         
+    def subtraction(x,y):
+        print(x-y)
+    def multiplication(x,y):
+        print(x*y)                 
+    def division(x,y):
+        print(x/y)
+
+    a = 11
+    b = 2
+    addition(a,b)
+    subtraction(a,b)
+    multiplication(a,b)
+    division(a,b)
+ 
+ 
+
+arithmeticoperations()   
+
+
+method-2: 
+def arithmeticoperations(x,y):
+    def addition():
+        print(x+y)                         
+    def subtraction():
+        print(x-y)
+    def multiplication():
+        print(x*y)                 
+    def division():
+        print(x/y)
+
+     
+    addition()
+    subtraction()
+    multiplication()
+    division()
+ 
+ 
+a = 11
+b = 2
+arithmeticoperations(a,b)   
+
+
+ 
+
+
