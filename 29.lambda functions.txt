@@ -1,0 +1,81 @@
+normal functions:
+-------------------
+1. All normal functions starts with def keyword.
+2. functionname is compulsory.
+3. argumentslist represents list of formal arguments
+4. ':' indicates begining of the function.
+5. st-1,st-2,st-3,...st-n are called body of the function.
+6. return expression ,
+   to return values from function to main program.
+7. syntax:
+    def functionname(argumentslist):
+        st-1
+        st-2
+        st-3
+        --
+        --
+        st-n
+        return expression
+
+
+
+
+
+lambda functions:
+-------------------
+1. All lambda functions starts with lambda keyword.
+2. No need functionname.
+   so lambda functins are also called nameless functions (or) anonymous functions.
+3. argumentslist represents list of formal arguments
+4. ':' indicates begining of the function.
+5. only one statement is allowed.
+6. return keyword is not allowed.
+    
+7. syntax:
+         variablename = lambda argumentslist: st-1
+         
+
+
+
+ex-1: write a lambda function to find the square of a given number  
+s = lambda x: x*x
+
+
+n = 5
+print('square value = ',s(n))
+
+
+ex-3: write a lambda function to find the cube of a given number  
+c = lambda x,y: x+y
+
+
+n1 = 5
+n2 = 2
+print('Addition  value = ',c(n1,n2))
+
+
+
+ex-4: write a lambda functions to find arithmetic operations 
+add = lambda x,y: x+y
+sub = lambda x,y: x-y
+mul = lambda x,y: x*y
+div = lambda x,y: x/y
+
+
+n1 = 5
+n2 = 2
+print('Addition  value = ',add(n1,n2))
+print('subtraction  value = ',sub(n1,n2))
+print('multiplication value = ',mul(n1,n2))
+print('Division value = ',div(n1,n2))
+
+
+
+ex-5: write a lambda function to find biggest of two numbers  '
+big = lambda x,y: 'First number is biggest' if x>y else 'second number is biggest'
+ 
+
+
+n1 = 5
+n2 = 20
+print(big(n1,n2))
